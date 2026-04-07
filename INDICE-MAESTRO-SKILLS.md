@@ -1,7 +1,8 @@
 # ÍNDICE MAESTRO DE SKILLS - Proyecto Skills
 **Fecha de organización:** 8 de abril de 2026
-**Total de skills:** 72
-**Total de plugins:** 2 (knowledge-work-plugins + software-architect)
+**Total de skills:** 141 (73 propias + 68 de plugins integradas)
+**Categorías:** 19 temáticas + 1 carpeta de plugins/repos
+**Plugins integrados:** knowledge-work-plugins (17 categorías) + software-architect
 
 ---
 
@@ -103,31 +104,42 @@ Creación y manipulación de documentos: Word, PDF, Excel, PowerPoint, diagramas
 
 ---
 
-## 07-SKILLS-LEGAL-FISCAL (3 skills + references)
-Derecho tributario español, due diligence y normativa medioambiental.
+## 07-SKILLS-LEGAL-FISCAL (9 skills + references)
+Derecho tributario español, due diligence, compliance y gestión legal.
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
 | redaccion-demandas-tributarias-espana-SKILL.md | Redactar demandas contencioso-administrativas tributarias | demandas-tributarias |
 | due-diligence-mya-espana-SKILL.md | Due diligence M&A España: jurídico, fiscal, medioambiental | due-diligence-spain |
 | rd214-huella-carbono-cooperativas-SKILL.md | Cumplimiento RD 214/2025 huella carbono cooperativas | rd-214-2025-cooperativas |
+| revision-contratos-redlines-playbook-SKILL.md | Revisar contratos contra playbook, generar redlines | legal:contract-review |
+| compliance-gdpr-ccpa-privacidad-SKILL.md | GDPR, CCPA, DPAs, transferencias datos transfronterizas | legal:compliance |
+| evaluacion-riesgo-legal-severidad-SKILL.md | Evaluar riesgo legal: severidad × probabilidad + escalado | legal:legal-risk-assessment |
+| triaje-nda-verde-amarillo-rojo-SKILL.md | Clasificar NDAs: GREEN/YELLOW/RED para aprobación rápida | legal:nda-triage |
+| briefing-reuniones-legales-acciones-SKILL.md | Preparar briefings reuniones legales + action items | legal:meeting-briefing |
+| respuestas-plantilla-consultas-legales-SKILL.md | Respuestas template para consultas legales frecuentes | legal:canned-responses |
 | demandas-tributarias-references/ | Carpeta con plantillas y referencias normativas | (adjunta) |
 
 ---
 
-## 08-SKILLS-MARKETING-COPY (3 skills)
-Copywriting, psicología de marketing y analytics de enlaces.
+## 08-SKILLS-MARKETING-COPY (8 skills)
+Copywriting, psicología, campañas, contenido, analytics y voz de marca.
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
 | copywriting-paginas-marketing-SKILL.md | Escribir/mejorar copy de marketing para páginas web | copywriting |
 | psicologia-modelos-mentales-marketing-SKILL.md | 70+ modelos mentales y sesgos aplicados a marketing | marketing-psychology |
 | acortador-urls-analytics-qr-SKILL.md | Acortar URLs, QR codes, analytics clics (Dub.co) | link-shortener-analytics |
+| voz-marca-guia-estilo-consistencia-SKILL.md | Aplicar y reforzar voz de marca y guía de estilo | marketing:brand-voice |
+| planificacion-campanas-canales-kpis-SKILL.md | Planificar campañas: objetivos, canales, calendario, KPIs | marketing:campaign-planning |
+| analisis-competitivo-posicionamiento-SKILL.md | Investigar competidores: posicionamiento, messaging, gaps | marketing:competitive-analysis |
+| creacion-contenido-multicanal-seo-SKILL.md | Crear contenido: blog, social, email, landing, SEO | marketing:content-creation |
+| analytics-rendimiento-marketing-SKILL.md | Analizar rendimiento: métricas, tendencias, optimización | marketing:performance-analytics |
 
 ---
 
-## 09-SKILLS-UTILIDADES (17 skills)
-Herramientas, CLI, scraping, comunicación, meta-skills y productividad.
+## 09-SKILLS-UTILIDADES (19 skills)
+Herramientas, CLI, scraping, comunicación, meta-skills, plugins y productividad.
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
@@ -148,34 +160,176 @@ Herramientas, CLI, scraping, comunicación, meta-skills y productividad.
 | comunicacion-profesional-tecnica-SKILL.md | Emails, mensajes equipo, agendas reuniones | professional-communication |
 | crear-gifs-animados-slack-SKILL.md | Crear GIFs animados optimizados para Slack | slack-gif-creator |
 | guia-creacion-skills-efectivas-SKILL.md | Guía para crear skills especializadas efectivas | this-skill-covers... |
+| personalizar-plugins-cowork-SKILL.md | Personalizar plugins Cowork para org específica | cowork-plugin-customizer |
+| crear-plugins-cowork-desde-cero-SKILL.md | Crear plugins Cowork nuevos desde cero | create-cowork-plugin |
 
 ---
 
 ## 10-PLUGINS-Y-REPOS
-Plugins instalados y repositorios de marketplace.
+Plugins instalados y repositorios de marketplace (archivos originales completos).
 
 ### software-architect/
 Plugin local con 9 archivos: patrones arquitectura Next.js, Supabase DB, API routes, migraciones, scaffold features, optimización rendimiento, design patterns.
 
 ### knowledge-work-plugins/
 Marketplace con 17 categorías de plugins profesionales:
-- **bio-research** — Bioinformática, single-cell RNA, Nextflow
-- **cowork-plugin-management** — Crear y personalizar plugins
-- **customer-support** — Triage tickets, respuestas, KB articles
-- **data** — SQL, dashboards, visualización, exploración datos
-- **design** — (contenido del marketplace)
-- **engineering** — Code review, system design, incidents, testing
-- **enterprise-search** — Búsqueda multi-fuente empresarial
-- **finance** — Statements, journal entries, SOX, reconciliación
-- **human-resources** — (contenido del marketplace)
-- **legal** — Contratos, NDA triage, compliance, risk assessment
-- **marketing** — Campañas, SEO, brand voice, content creation
-- **operations** — (contenido del marketplace)
-- **partner-built** — (extensiones de terceros)
-- **product-management** — PRDs, roadmaps, métricas, research
-- **productivity** — Task management, memory system
-- **sales** — Account research, outreach, forecasts, call prep
+bio-research, cowork-plugin-management, customer-support, data, design, engineering, enterprise-search, finance, human-resources, legal, marketing, operations, partner-built, product-management, productivity, sales.
+
+---
+
+## 11-SKILLS-DATOS-ANALYTICS (7 skills)
+Análisis de datos, SQL, dashboards, visualización y estadística.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| extractor-contexto-datos-empresa-SKILL.md | Generar skill de análisis específica para data warehouse | data:data-context-extractor |
+| exploracion-perfilado-datasets-SKILL.md | Explorar datasets: distribuciones, nulls, outliers, calidad | data:data-exploration |
+| validacion-qa-analisis-datos-SKILL.md | QA de análisis: metodología, sesgos, reproducibilidad | data:data-validation |
+| visualizacion-datos-matplotlib-plotly-SKILL.md | Visualizaciones con matplotlib, seaborn, plotly | data:data-visualization |
+| constructor-dashboards-interactivos-html-SKILL.md | Dashboards HTML interactivos con Chart.js y filtros | data:interactive-dashboard-builder |
+| consultas-sql-multidialecto-optimizado-SKILL.md | SQL correcto para Snowflake, BigQuery, Postgres, Databricks | data:sql-queries |
+| analisis-estadistico-hipotesis-outliers-SKILL.md | Estadística: descriptiva, tendencias, hipótesis, correlaciones | data:statistical-analysis |
+
+---
+
+## 12-SKILLS-INGENIERIA-SOFTWARE (6 skills)
+Code review, diseño de sistemas, testing, incidentes y deuda técnica.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| revision-codigo-bugs-seguridad-SKILL.md | Review código: bugs, seguridad, performance, mantenibilidad | engineering:code-review |
+| documentacion-tecnica-runbooks-SKILL.md | Documentación técnica: API docs, READMEs, runbooks | engineering:documentation |
+| respuesta-incidentes-produccion-SKILL.md | Triage y gestión incidentes producción + postmortem | engineering:incident-response |
+| diseno-sistemas-arquitectura-SKILL.md | Diseñar sistemas, servicios, APIs y data modeling | engineering:system-design |
+| deuda-tecnica-identificar-priorizar-SKILL.md | Identificar, categorizar y priorizar deuda técnica | engineering:tech-debt |
+| estrategia-testing-planes-pruebas-SKILL.md | Diseñar estrategias de test y planes de pruebas | engineering:testing-strategy |
+
+---
+
+## 13-SKILLS-FINANZAS-CONTABILIDAD (6 skills)
+Estados financieros, asientos, cierres, auditoría y conciliación.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| auditoria-sox404-controles-muestreo-SKILL.md | SOX 404: testing controles, muestreo, documentación | finance:audit-support |
+| cierre-mensual-secuencia-tareas-SKILL.md | Gestión cierre mensual: secuencia, dependencias, estado | finance:close-management |
+| estados-financieros-pyg-balance-SKILL.md | Generar P&L, balance, cash flow con comparación periodos | finance:financial-statements |
+| asientos-contables-debito-credito-SKILL.md | Preparar journal entries: devengos, amortización, nóminas | finance:journal-entry-prep |
+| conciliacion-cuentas-banco-subledger-SKILL.md | Conciliar GL vs banco, subledger, intercompañía | finance:reconciliation |
+| analisis-varianzas-presupuesto-real-SKILL.md | Descomponer varianzas budget vs actual con narrativa | finance:variance-analysis |
+
+---
+
+## 14-SKILLS-VENTAS-CRM (15 skills)
+Investigación cuentas, outreach, inteligencia competitiva, Apollo y Common Room.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| investigacion-cuentas-intel-ventas-SKILL.md | Investigar empresa/persona para intel de ventas | sales:account-research |
+| preparacion-llamadas-ventas-SKILL.md | Preparar llamadas: contexto cuenta, agenda, asistentes | sales:call-prep |
+| inteligencia-competitiva-battlecards-SKILL.md | Battlecards interactivos con comparación competidores | sales:competitive-intelligence |
+| generador-assets-ventas-landing-SKILL.md | Generar assets ventas: landing, decks, one-pagers | sales:create-an-asset |
+| briefing-diario-prioridades-ventas-SKILL.md | Briefing diario priorizado con reuniones y acciones | sales:daily-briefing |
+| redactar-outreach-personalizado-SKILL.md | Investigar prospecto + redactar outreach personalizado | sales:draft-outreach |
+| apollo-enriquecer-leads-contactos-SKILL.md | Enriquecer leads: email, teléfono, cargo, empresa | apollo:enrich-lead |
+| apollo-prospecting-icp-leads-SKILL.md | Pipeline ICP→leads rankeados con emails y teléfonos | apollo:prospect |
+| apollo-cargar-secuencias-outreach-SKILL.md | Buscar leads + cargar en secuencias Apollo automáticamente | apollo:sequence-load |
+| commonroom-investigacion-cuenta-SKILL.md | Investigar empresa con señales Common Room | common-room:account-research |
+| commonroom-prep-llamada-signals-SKILL.md | Preparar llamada con señales Common Room | common-room:call-prep |
+| commonroom-outreach-personalizado-SKILL.md | Outreach personalizado basado en señales Common Room | common-room:compose-outreach |
+| commonroom-investigacion-contacto-SKILL.md | Investigar persona específica en Common Room | common-room:contact-research |
+| commonroom-prospector-listas-SKILL.md | Construir listas de prospectos con Prospector | common-room:prospect |
+| commonroom-briefing-semanal-SKILL.md | Briefing semanal de todas las llamadas externas | common-room:weekly-prep-brief |
+
+---
+
+## 15-SKILLS-SOPORTE-CLIENTE (5 skills)
+Triaje tickets, respuestas, escalados, base de conocimiento e investigación.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| investigacion-cliente-multifuente-SKILL.md | Investigar pregunta cliente buscando en docs y KB | customer-support:customer-research |
+| escalado-incidencias-ingenieria-SKILL.md | Empaquetar escalados para ingeniería/producto/liderazgo | customer-support:escalation |
+| gestion-base-conocimiento-kb-SKILL.md | Escribir y mantener artículos KB desde tickets resueltos | customer-support:knowledge-management |
+| redaccion-respuestas-cliente-SKILL.md | Redactar respuestas profesionales y empáticas al cliente | customer-support:response-drafting |
+| triaje-tickets-prioridad-routing-SKILL.md | Triaje tickets: categorizar, priorizar P1-P4, routing | customer-support:ticket-triage |
+
+---
+
+## 16-SKILLS-PRODUCTO-PM (6 skills)
+PRDs, roadmaps, métricas, análisis competitivo e investigación de usuarios.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| analisis-competitivo-matrices-SKILL.md | Análisis competidores: matrices features, posicionamiento | product-management:competitive-analysis |
+| especificacion-funcional-prd-SKILL.md | Escribir PRDs: problema, user stories, requisitos, métricas | product-management:feature-spec |
+| metricas-producto-okrs-dashboards-SKILL.md | Definir y trackear métricas producto: OKRs, dashboards | product-management:metrics-tracking |
+| gestion-roadmap-rice-moscow-SKILL.md | Gestionar roadmap: RICE, MoSCoW, ICE, Now/Next/Later | product-management:roadmap-management |
+| comunicacion-stakeholders-reportes-SKILL.md | Updates stakeholders: ejecutivos, ingeniería, clientes | product-management:stakeholder-comms |
+| sintesis-investigacion-usuarios-SKILL.md | Sintetizar research cualitativo/cuantitativo en insights | product-management:user-research-synthesis |
+
+---
+
+## 17-SKILLS-PRODUCTIVIDAD (2 skills)
+Gestión de tareas y sistema de memoria persistente.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| sistema-memoria-dos-niveles-SKILL.md | Memoria 2 niveles: CLAUDE.md + directorio memory/ | productivity:memory-management |
+| gestion-tareas-tasks-md-SKILL.md | Gestión tareas con TASKS.md compartido | productivity:task-management |
+
+---
+
+## 18-SKILLS-BIOINVESTIGACION (5 skills)
+Bioinformática, single-cell RNA, pipelines Nextflow y selección de problemas científicos.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| conversion-datos-instrumento-allotrope-SKILL.md | Convertir datos instrumentos lab a formato Allotrope JSON | bio-research:instrument-data-to-allotrope |
+| pipelines-nfcore-rnaseq-sarek-SKILL.md | Pipelines nf-core: rnaseq, sarek, atacseq en Nextflow | bio-research:nextflow-development |
+| seleccion-problemas-cientificos-SKILL.md | Selección problemas investigación, ideación, troubleshooting | bio-research:scientific-problem-selection |
+| deep-learning-singlecell-scvi-SKILL.md | Deep learning single-cell: scVI, scANVI, totalVI, PeakVI | bio-research:scvi-tools |
+| qc-singlecell-rna-scanpy-SKILL.md | QC single-cell RNA-seq con scanpy y filtrado MAD | bio-research:single-cell-rna-qc |
+
+---
+
+## 19-SKILLS-BUSQUEDA-EMPRESARIAL (3 skills)
+Búsqueda multi-fuente empresarial, síntesis y gestión de conectores.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| sintesis-conocimiento-multifuente-SKILL.md | Combinar resultados de múltiples fuentes con atribución | enterprise-search:knowledge-synthesis |
+| estrategia-busqueda-descomposicion-SKILL.md | Descomponer queries y orquestar búsqueda multi-fuente | enterprise-search:search-strategy |
+| gestion-fuentes-mcp-conectadas-SKILL.md | Gestionar fuentes MCP conectadas, prioridad, rate limiting | enterprise-search:source-management |
+
+---
+
+## RESUMEN EJECUTIVO
+
+| # | Categoría | Skills | Tipo |
+|---|-----------|--------|------|
+| 01 | 3D / Web | 7 | Propias |
+| 02 | Frontend | 10 | Propias |
+| 03 | Backend | 11 | Propias |
+| 04 | Mobile / Expo | 5 | Propias |
+| 05 | DevOps / Infra | 7 | Propias |
+| 06 | Documentos | 10 | Propias |
+| 07 | Legal / Fiscal | 9 | Propias + Plugin |
+| 08 | Marketing / Copy | 8 | Propias + Plugin |
+| 09 | Utilidades | 19 | Propias + Plugin |
+| 10 | Plugins y Repos | — | Repos completos |
+| 11 | Datos / Analytics | 7 | Plugin |
+| 12 | Ingeniería Software | 6 | Plugin |
+| 13 | Finanzas / Contabilidad | 6 | Plugin |
+| 14 | Ventas / CRM | 15 | Plugin |
+| 15 | Soporte Cliente | 5 | Plugin |
+| 16 | Producto / PM | 6 | Plugin |
+| 17 | Productividad | 2 | Plugin |
+| 18 | Bioinvestigación | 5 | Plugin |
+| 19 | Búsqueda Empresarial | 3 | Plugin |
+| | **TOTAL** | **141** | |
 
 ---
 
 *Generado automáticamente el 8 de abril de 2026*
+*Repositorio: https://github.com/semaes111/PROYECTO-SKILLS*
