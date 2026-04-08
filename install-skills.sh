@@ -11,7 +11,7 @@
 #   ./install-skills.sh [--all | --category 01 02 03 | --list]
 #
 # EJEMPLOS:
-#   ./install-skills.sh --all                    # Instala las 141 skills
+#   ./install-skills.sh --all                    # Instala las 154 skills
 #   ./install-skills.sh --category 01 03 07      # Solo 3D-WEB, Backend, Legal
 #   ./install-skills.sh --list                   # Muestra categorías disponibles
 #   ./install-skills.sh --uninstall              # Desinstala todas las skills
@@ -44,8 +44,8 @@ SKIPPED=0
 show_banner() {
     echo -e "${CYAN}"
     echo "╔══════════════════════════════════════════════════════════════╗"
-    echo "║     INSTALADOR DE SKILLS - PROYECTO SKILLS v2.0            ║"
-    echo "║     141 skills en 19 categorías temáticas                  ║"
+    echo "║     INSTALADOR DE SKILLS - PROYECTO SKILLS v3.0            ║"
+    echo "║     154 skills en 19 categorías temáticas                  ║"
     echo "║     Compatible con Claude Code / Cowork                    ║"
     echo "╚══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
@@ -54,7 +54,7 @@ show_banner() {
 show_categories() {
     echo -e "${BOLD}Categorías disponibles:${NC}"
     echo ""
-    echo -e "  ${CYAN}01${NC} - SKILLS-3D-WEB              (7 skills)   Three.js, WebGL, arte 3D"
+    echo -e "  ${CYAN}01${NC} - SKILLS-3D-WEB              (7 skills)    Three.js, WebGL, arte 3D"
     echo -e "  ${CYAN}02${NC} - SKILLS-FRONTEND            (10 skills)  React, Next.js, UI/UX"
     echo -e "  ${CYAN}03${NC} - SKILLS-BACKEND             (11 skills)  Node, Supabase, auth, BD"
     echo -e "  ${CYAN}04${NC} - SKILLS-MOBILE-EXPO         (5 skills)   React Native, Expo"
@@ -128,6 +128,39 @@ install_skill_file() {
     echo -e "  ${GREEN}✓${NC} $skill_name"
 }
 
+install_skill_dir() {
+    # Instala una skill que ya es directorio con SKILL.md dentro
+    local src_dir="$1"
+    local target_base="$2"
+    local skill_name=$(basename "$src_dir")
+
+    local dest_dir="$target_base/$skill_name"
+    mkdir -p "$dest_dir"
+
+    # Copiar SKILL.md
+    cp "$src_dir/SKILL.md" "$dest_dir/SKILL.md"
+
+    # Copiar references si existen
+    if [ -d "$src_dir/references" ]; then
+        cp -r "$src_dir/references" "$dest_dir/"
+    fi
+
+    # Copiar standalone si existe (MCP servers instalables)
+    if [ -d "$src_dir/standalone" ]; then
+        cp -r "$src_dir/standalone" "$dest_dir/"
+    fi
+
+    # Copiar templates si existen
+    for tmpl in "$src_dir"/*TEMPLATE*; do
+        if [ -f "$tmpl" ]; then
+            cp "$tmpl" "$dest_dir/"
+        fi
+    done
+
+    INSTALLED=$((INSTALLED + 1))
+    echo -e "  ${GREEN}✓${NC} $skill_name"
+}
+
 install_category() {
     local cat_num="$1"
     local target_base="$2"
@@ -144,11 +177,20 @@ install_category() {
     echo ""
     echo -e "${BLUE}📁 Instalando: ${BOLD}$cat_name${NC}"
 
-    # Instalar cada SKILL.md en la categoría
     local count=0
+
+    # Modo 1: Instalar skills planas (*-SKILL.md)
     for skill_file in "$cat_dir"/*-SKILL.md; do
         if [ -f "$skill_file" ]; then
             install_skill_file "$skill_file" "$target_base"
+            count=$((count + 1))
+        fi
+    done
+
+    # Modo 2: Instalar skills que son directorios (contienen SKILL.md)
+    for skill_subdir in "$cat_dir"/*/; do
+        if [ -f "${skill_subdir}SKILL.md" ]; then
+            install_skill_dir "${skill_subdir%/}" "$target_base"
             count=$((count + 1))
         fi
     done
