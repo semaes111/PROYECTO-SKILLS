@@ -1,6 +1,6 @@
 # ÍNDICE MAESTRO DE SKILLS - Proyecto Skills
 **Fecha de organización:** 8 de abril de 2026
-**Total de skills:** 144 (76 propias + 68 de plugins integradas)
+**Total de skills:** 154 (86 propias + 68 de plugins integradas)
 **Categorías:** 19 temáticas + 1 carpeta de plugins/repos
 **Plugins integrados:** knowledge-work-plugins (17 categorías) + software-architect
 
@@ -71,7 +71,7 @@ Desarrollo móvil con React Native y Expo.
 
 ---
 
-## 05-SKILLS-DEVOPS-INFRA (9 skills)
+## 05-SKILLS-DEVOPS-INFRA (12 skills)
 CI/CD, despliegue, infraestructura, orquestación Docker y agentes autónomos.
 
 | Archivo | Función | Origen |
@@ -85,6 +85,9 @@ CI/CD, despliegue, infraestructura, orquestación Docker y agentes autónomos.
 | actualizador-dependencias-seguro-SKILL.md | Actualizar dependencias de forma segura y automática | dependency-updater |
 | memoria-persistente-7-capas-SKILL.md | Sistema MEMU 7 capas: Redis/Supabase/pgvector/n8n (TypeScript) | persistent-memory-7layer |
 | orquestacion-docker-agente-autonomo-SKILL.md | Agente Docker autónomo: ClaudeMaxRunner $0 API, SmartRouter, VeracityCore (Python) | docker-agent-orchestration |
+| patrones-referencia-mcp-servers-SKILL.md | Patrones de 20+ servidores MCP oficiales (bootstrap, tools, handlers, error) | mcp-reference-patterns |
+| mcp-n8n-workflow-builder-SKILL.md | MCP server para generar workflows n8n programáticamente | mcp-n8n-workflow-builder |
+| rag-serverless-pgvector-SKILL.md | Blueprint RAG minimalista: Vercel + Supabase pgvector + embeddings | rag-serverless-pgvector |
 
 ---
 
@@ -106,7 +109,7 @@ Creación y manipulación de documentos: Word, PDF, Excel, PowerPoint, diagramas
 
 ---
 
-## 07-SKILLS-LEGAL-FISCAL (9 skills + references)
+## 07-SKILLS-LEGAL-FISCAL (10 skills + references)
 Derecho tributario español, due diligence, compliance y gestión legal.
 
 | Archivo | Función | Origen |
@@ -120,6 +123,7 @@ Derecho tributario español, due diligence, compliance y gestión legal.
 | triaje-nda-verde-amarillo-rojo-SKILL.md | Clasificar NDAs: GREEN/YELLOW/RED para aprobación rápida | legal:nda-triage |
 | briefing-reuniones-legales-acciones-SKILL.md | Preparar briefings reuniones legales + action items | legal:meeting-briefing |
 | respuestas-plantilla-consultas-legales-SKILL.md | Respuestas template para consultas legales frecuentes | legal:canned-responses |
+| schema-fiscal-espanol-supabase-SKILL.md | Schema Supabase completo: 11 tablas dominio fiscal español (NIF, IVA, IRPF, modelos 303/130/200) | schema-fiscal-espanol-supabase |
 | demandas-tributarias-references/ | Carpeta con plantillas y referencias normativas | (adjunta) |
 
 ---
@@ -140,7 +144,7 @@ Copywriting, psicología, campañas, contenido, analytics y voz de marca.
 
 ---
 
-## 09-SKILLS-UTILIDADES (20 skills)
+## 09-SKILLS-UTILIDADES (26 skills)
 Herramientas, CLI, scraping, comunicación, memoria, meta-skills, plugins y productividad.
 
 | Archivo | Función | Origen |
@@ -165,6 +169,12 @@ Herramientas, CLI, scraping, comunicación, memoria, meta-skills, plugins y prod
 | personalizar-plugins-cowork-SKILL.md | Personalizar plugins Cowork para org específica | cowork-plugin-customizer |
 | crear-plugins-cowork-desde-cero-SKILL.md | Crear plugins Cowork nuevos desde cero | create-cowork-plugin |
 | memoria-sesion-persistente-SKILL.md | Pseudo-memoria persistente entre sesiones via CLAUDE-MEMORY.md | session-memory |
+| brainstorming-diseno-colaborativo-SKILL.md | Fase de diseño colaborativo antes de implementar (Superpowers) | brainstorming |
+| desarrollo-dirigido-subagentes-SKILL.md | Desarrollo con subagentes frescos + review 2 fases (Superpowers) | subagent-driven-development |
+| despacho-agentes-paralelos-SKILL.md | Coordinar agentes paralelos en tareas independientes (Superpowers) | dispatching-parallel-agents |
+| escritura-planes-implementacion-SKILL.md | Planes de implementación bite-sized con código completo (Superpowers) | writing-plans |
+| finalizar-rama-desarrollo-SKILL.md | Workflow de finalización: merge/PR/keep/discard (Superpowers) | finishing-a-development-branch |
+| aislamiento-git-worktrees-SKILL.md | Git worktrees para aislamiento de features (Superpowers) | using-git-worktrees |
 
 ---
 
