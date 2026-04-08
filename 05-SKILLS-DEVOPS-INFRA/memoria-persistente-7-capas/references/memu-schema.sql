@@ -304,7 +304,7 @@ INSERT INTO memu_protocols (name, slug, category, description, trigger_event, pr
  ]'::JSONB),
 
 ('Consolidacion memoria nocturna', 'nightly-consolidation', 'admin',
- 'Promueve L2→L3 y resume L3→L6 episodios del día',
+ 'Promueve L2->L3 y resume L3->L6 episodios del día',
  'schedule:daily:02:00', 1,
  '[
    {"step": 1, "action": "flush_redis_l2_to_supabase_l3", "params": {"batch_size": 100}},

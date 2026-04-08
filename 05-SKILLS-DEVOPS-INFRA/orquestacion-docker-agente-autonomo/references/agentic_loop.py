@@ -310,11 +310,11 @@ class ActionParser:
     """
     Claude devuelve acciones en formato JSON dentro de su respuesta.
     El agente recibe instrucciones de responder con:
-    
+
     <action>
     {"type": "bash", "cmd": "npm test", "thought": "voy a ejecutar los tests"}
     </action>
-    
+
     O múltiples acciones en secuencia.
     """
 
@@ -501,11 +501,11 @@ class ActionValidator:
 class AgenticLoop:
     """
     Motor de ejecución multi-turno.
-    
+
     Diferencia vs single-shot:
       Single-shot: tarea → 1 llamada → respuesta
       Agentic:     tarea → [acción → observación] * N → resultado final
-    
+
     El agente puede ejecutar comandos, leer/escribir archivos, navegar la web,
     delegar a especialistas — todo en bucle hasta completar la tarea.
     """
@@ -617,7 +617,7 @@ REGLAS OPERATIVAS:
     ) -> LoopResult:
         """
         Ejecuta el loop completo.
-        
+
         Args:
             task:         Tarea en lenguaje natural
             session_id:   ID de sesión para persistencia

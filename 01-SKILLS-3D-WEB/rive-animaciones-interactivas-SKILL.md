@@ -137,11 +137,11 @@ const { rive, RiveComponent } = useRive({
 // Listener manual
 useEffect(() => {
   if (!rive) return
-  
+
   const handler = (event) => {
     console.log('Rive event:', event)
   }
-  
+
   rive.on(EventType.StateChange, handler)
   return () => rive.off(EventType.StateChange, handler)
 }, [rive])

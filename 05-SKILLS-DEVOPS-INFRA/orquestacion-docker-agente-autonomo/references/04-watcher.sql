@@ -113,4 +113,3 @@ FROM interactions
 WHERE degradation_score > 0
 GROUP BY session_id
 ORDER BY avg_degradation DESC;
-
