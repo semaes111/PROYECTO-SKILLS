@@ -11,7 +11,7 @@
 #   ./install-skills.sh [--all | --category 01 02 03 | --list]
 #
 # EJEMPLOS:
-#   ./install-skills.sh --all                    # Instala las 154 skills
+#   ./install-skills.sh --all                    # Instala las 166 skills
 #   ./install-skills.sh --category 01 03 07      # Solo 3D-WEB, Backend, Legal
 #   ./install-skills.sh --list                   # Muestra categorías disponibles
 #   ./install-skills.sh --uninstall              # Desinstala todas las skills
@@ -45,7 +45,7 @@ show_banner() {
     echo -e "${CYAN}"
     echo "╔══════════════════════════════════════════════════════════════╗"
     echo "║     INSTALADOR DE SKILLS - PROYECTO SKILLS v3.0            ║"
-    echo "║     154 skills en 19 categorías temáticas                  ║"
+    echo "║     166 skills en 19 categorías temáticas                  ║"
     echo "║     Compatible con Claude Code / Cowork                    ║"
     echo "╚══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
