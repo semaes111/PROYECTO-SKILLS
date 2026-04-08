@@ -1,6 +1,6 @@
 # ÍNDICE MAESTRO DE SKILLS - Proyecto Skills
 **Fecha de organización:** 8 de abril de 2026
-**Total de skills:** 141 (73 propias + 68 de plugins integradas)
+**Total de skills:** 144 (76 propias + 68 de plugins integradas)
 **Categorías:** 19 temáticas + 1 carpeta de plugins/repos
 **Plugins integrados:** knowledge-work-plugins (17 categorías) + software-architect
 
@@ -71,8 +71,8 @@ Desarrollo móvil con React Native y Expo.
 
 ---
 
-## 05-SKILLS-DEVOPS-INFRA (7 skills)
-CI/CD, despliegue, infraestructura y automatización.
+## 05-SKILLS-DEVOPS-INFRA (9 skills)
+CI/CD, despliegue, infraestructura, orquestación Docker y agentes autónomos.
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
@@ -83,6 +83,8 @@ CI/CD, despliegue, infraestructura y automatización.
 | actualizacion-sdk-expo-SKILL.md | Actualizar SDK Expo y arreglar dependencias | upgrading-expo |
 | paas-selfhosted-coolify-docker-SKILL.md | PaaS self-hosted con Coolify: Docker, SSL, push-deploy | selfhosted-paas-deploy |
 | actualizador-dependencias-seguro-SKILL.md | Actualizar dependencias de forma segura y automática | dependency-updater |
+| memoria-persistente-7-capas-SKILL.md | Sistema MEMU 7 capas: Redis/Supabase/pgvector/n8n (TypeScript) | persistent-memory-7layer |
+| orquestacion-docker-agente-autonomo-SKILL.md | Agente Docker autónomo: ClaudeMaxRunner $0 API, SmartRouter, VeracityCore (Python) | docker-agent-orchestration |
 
 ---
 
@@ -138,8 +140,8 @@ Copywriting, psicología, campañas, contenido, analytics y voz de marca.
 
 ---
 
-## 09-SKILLS-UTILIDADES (19 skills)
-Herramientas, CLI, scraping, comunicación, meta-skills, plugins y productividad.
+## 09-SKILLS-UTILIDADES (20 skills)
+Herramientas, CLI, scraping, comunicación, memoria, meta-skills, plugins y productividad.
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
@@ -162,6 +164,7 @@ Herramientas, CLI, scraping, comunicación, meta-skills, plugins y productividad
 | guia-creacion-skills-efectivas-SKILL.md | Guía para crear skills especializadas efectivas | this-skill-covers... |
 | personalizar-plugins-cowork-SKILL.md | Personalizar plugins Cowork para org específica | cowork-plugin-customizer |
 | crear-plugins-cowork-desde-cero-SKILL.md | Crear plugins Cowork nuevos desde cero | create-cowork-plugin |
+| memoria-sesion-persistente-SKILL.md | Pseudo-memoria persistente entre sesiones via CLAUDE-MEMORY.md | session-memory |
 
 ---
 
