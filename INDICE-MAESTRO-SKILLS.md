@@ -1,7 +1,7 @@
-# ÍNDICE MAESTRO — Proyecto Skills v4.0
+# ÍNDICE MAESTRO — Proyecto Skills v5.0
 
 **Fecha de generación:** 9 de abril de 2026
-**Auditoría completa:** 606 archivos analizados
+**Auditoría completa:** 616 archivos analizados
 
 ---
 
@@ -9,7 +9,7 @@
 
 | Tipo de recurso | Cantidad | Descripción |
 |----------------|----------|-------------|
-| **Skills instalables** | 213 | Archivos SKILL.md en categorías 01-22 |
+| **Skills instalables** | 223 | Archivos SKILL.md en categorías 01-22 |
 | **Skills de plugins (fuente)** | 86 | SKILL.md originales en 10-PLUGINS-Y-REPOS |
 | **Commands (acciones rápidas)** | 71 | Comandos slash invocables desde plugins |
 | **Scripts Python** | 42 | Código funcional ejecutable (.py) |
@@ -20,11 +20,11 @@
 | **Código fuente TypeScript** | 2 | MCP server + API de memoria |
 | **Configuración** | 8 | docker-compose, tsconfig, pyproject, etc. |
 | **Documentación** | 5 | READMEs, guías de instalación |
-| **TOTAL archivos en repo** | **606** | — |
+| **TOTAL archivos en repo** | **616** | — |
 
-### Herramientas funcionales (invocables o ejecutables): **433**
+### Herramientas funcionales (invocables o ejecutables): **443**
 
-> Skills (213) + Plugin skills (86) + Commands (71) + Scripts (42+7) + Prompts (3) + Architect patterns (9) + TS source (2) = 433
+> Skills (223) + Plugin skills (86) + Commands (71) + Scripts (42+7) + Prompts (3) + Architect patterns (9) + TS source (2) = 443
 
 ---
 
@@ -33,14 +33,14 @@
 | # | Categoría | Skills | Nuevas (sesión 2-3) |
 |---|-----------|--------|---------------------|
 | 01 | SKILLS-3D-WEB | 19 | +12 (web design Awwwards) |
-| 02 | SKILLS-FRONTEND | 13 | +3 (21st.dev, design-md-gen, design-md-cat) |
-| 03 | SKILLS-BACKEND | 11 | — |
+| 02 | SKILLS-FRONTEND | 14 | +1 (Electron patterns) |
+| 03 | SKILLS-BACKEND | 18 | +7 (OpenAI Agents, Vercel AI, Composio, Qdrant, MongoDB, awilix, workers) |
 | 04 | SKILLS-MOBILE-EXPO | 5 | — |
 | 05 | SKILLS-DEVOPS-INFRA | 17 | +5 (ecc-*) |
 | 06 | SKILLS-DOCUMENTOS | 10 | — |
 | 07 | SKILLS-LEGAL-FISCAL | 10 | — |
 | 08 | SKILLS-MARKETING-COPY | 8 | — |
-| 09 | SKILLS-UTILIDADES | 47 | +21 (ecc-*) |
+| 09 | SKILLS-UTILIDADES | 44 | +2 (knowledge-graph, multi-agent orchestration) |
 | 10 | PLUGINS-Y-REPOS | 86 skills + 71 cmds | — |
 | 11 | SKILLS-DATOS-ANALYTICS | 7 | — |
 | 12 | SKILLS-INGENIERIA-SOFTWARE | 6 | — |
@@ -54,7 +54,7 @@
 | 20 | SKILLS-DISENO-UX | 6 | +6 (nuevo) |
 | 21 | SKILLS-RRHH | 6 | +6 (nuevo) |
 | 22 | SKILLS-OPERACIONES | 6 | +6 (nuevo) |
-| | **TOTAL SKILLS INSTALABLES** | **213** | +59 |
+| | **TOTAL SKILLS INSTALABLES** | **223** | +10 (Rowboat analysis) |
 
 ---
 
@@ -86,7 +86,7 @@ Experiencias 3D inmersivas, Three.js, WebGL, Babylon.js, animaciones cinematogr�
 
 ---
 
-## 02-SKILLS-FRONTEND (13 skills)
+## 02-SKILLS-FRONTEND (14 skills)
 
 Desarrollo frontend moderno, React/Next.js, UI/UX, temas y optimización.
 
@@ -105,12 +105,13 @@ Desarrollo frontend moderno, React/Next.js, UI/UX, temas y optimización.
 | 21st-dev-registry-componentes-SKILL.md | Registry comunitario 21st.dev: +2000 componentes React/Tailwind/shadcn-ui instalables via CLI | nuevo (sesión 5) |
 | awesome-design-md-catalogo-SKILL.md | Catálogo de 58 DESIGN.md de sitios reales (Vercel, Stripe, etc.) + 20 refs locales | nuevo (sesión 5) |
 | design-md-generator-SKILL.md | Generador de DESIGN.md propios formato Google Stitch (9 secciones) | nuevo (sesión 5) |
+| electron-app-patrones-modernos-SKILL.md | Patrones modernos Electron: contextBridge, IPC, esbuild, Forge, pnpm workspaces | nuevo (Rowboat) |
 
 ---
 
-## 03-SKILLS-BACKEND (11 skills)
+## 03-SKILLS-BACKEND (18 skills)
 
-Backend, bases de datos, autenticación, APIs y servicios.
+Backend, bases de datos, autenticación, APIs, AI SDKs y servicios.
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
@@ -125,6 +126,13 @@ Backend, bases de datos, autenticación, APIs y servicios.
 | chat-soporte-vivo-websockets-SKILL.md | Chat soporte en vivo con WebSockets (Papercups) | realtime-chat-support |
 | backend-binario-pocketbase-sqlite-SKILL.md | Backend completo en binario: SQLite + auth + API auto | single-file-backend-baas |
 | peticiones-api-fetch-react-query-SKILL.md | Data fetching: fetch, axios, React Query, SWR, offline | native-data-fetching |
+| openai-agents-sdk-orquestacion-SKILL.md | SDK @openai/agents: agentes, handoffs, pipelines, streaming, guardrails | nuevo (Rowboat) |
+| vercel-ai-sdk-multi-provider-SKILL.md | Vercel AI SDK multi-provider: OpenAI, Anthropic, Google, Ollama, streaming | nuevo (Rowboat) |
+| composio-toolkit-integracion-servicios-SKILL.md | Composio: OAuth flows, 250+ servicios, tool discovery, triggers | nuevo (Rowboat) |
+| qdrant-base-datos-vectorial-SKILL.md | Qdrant: colecciones, embeddings, filtros, RAG pipeline, producción | nuevo (Rowboat) |
+| mongodb-patrones-repositorios-SKILL.md | MongoDB: repositorios Zod, agregaciones, change streams, locking optimista | nuevo (Rowboat) |
+| awilix-inyeccion-dependencias-SKILL.md | awilix DI: containers, scopes, Clean Architecture, testing con mocks | nuevo (Rowboat) |
+| workers-pubsub-polling-patrones-SKILL.md | Workers: pub-sub + polling híbrido, locking versión, cron, graceful shutdown | nuevo (Rowboat) |
 
 ---
 
@@ -223,7 +231,7 @@ Copywriting, psicología, campañas, contenido, analytics y voz de marca.
 
 ---
 
-## 09-SKILLS-UTILIDADES (47 skills)
+## 09-SKILLS-UTILIDADES (44 skills)
 
 Herramientas CLI, scraping, comunicación, memoria, meta-skills, plugins, productividad y Engineering Claude Code (ecc-*).
 
@@ -281,6 +289,15 @@ Herramientas CLI, scraping, comunicación, memoria, meta-skills, plugins, produc
 | ecc-verification-loop-quality-gates-SKILL.md | Quality gates: build, test, lint, type-check | — |
 | ecc-rules-distill-extraer-reglas/ | Extraer reglas de codebase para CLAUDE.md | 2 scripts: `scan-rules.sh`, `scan-skills.sh` |
 | ecc-skill-comply-compliance-medicion/ | Medir compliance de skills con specs | 6 scripts .py, 3 prompts .md, `pyproject.toml` |
+| ecc-skill-stocktake-inventario-SKILL.md | Inventario automatizado de skills con diff tracking | — |
+| ecc-strategic-compact-compactacion-SKILL.md | Compactación estratégica de contexto para liberar tokens | — |
+
+### Skills Rowboat-derived (2)
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| knowledge-graph-markdown-vault-SKILL.md | Knowledge graph como vault Obsidian: entidades, wiki-links, extracción, indexación | nuevo (Rowboat) |
+| orquestacion-multi-agente-patrones-SKILL.md | Patrones multi-agente: stack-based loop, handoffs, pipelines, control flow | nuevo (Rowboat) |
 | ecc-skill-stocktake-inventario/ | Inventario automático de skills instaladas | 3 scripts: `scan.sh`, `quick-diff.sh`, `save-results.sh` |
 | ecc-strategic-compact-compactacion/ | Compactación estratégica de contexto | 1 script: `suggest-compact.sh` |
 
