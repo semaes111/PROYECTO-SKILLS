@@ -9,7 +9,7 @@
 
 | Tipo de recurso | Cantidad | Descripción |
 |----------------|----------|-------------|
-| **Skills instalables** | 210 | Archivos SKILL.md en categorías 01-22 |
+| **Skills instalables** | 211 | Archivos SKILL.md en categorías 01-22 |
 | **Skills de plugins (fuente)** | 86 | SKILL.md originales en 10-PLUGINS-Y-REPOS |
 | **Commands (acciones rápidas)** | 71 | Comandos slash invocables desde plugins |
 | **Scripts Python** | 42 | Código funcional ejecutable (.py) |
@@ -22,9 +22,9 @@
 | **Documentación** | 5 | READMEs, guías de instalación |
 | **TOTAL archivos en repo** | **606** | — |
 
-### Herramientas funcionales (invocables o ejecutables): **430**
+### Herramientas funcionales (invocables o ejecutables): **431**
 
-> Skills (210) + Plugin skills (86) + Commands (71) + Scripts (42+7) + Prompts (3) + Architect patterns (9) + TS source (2) = 430
+> Skills (211) + Plugin skills (86) + Commands (71) + Scripts (42+7) + Prompts (3) + Architect patterns (9) + TS source (2) = 431
 
 ---
 
@@ -33,7 +33,7 @@
 | # | Categoría | Skills | Nuevas (sesión 2-3) |
 |---|-----------|--------|---------------------|
 | 01 | SKILLS-3D-WEB | 19 | +12 (web design Awwwards) |
-| 02 | SKILLS-FRONTEND | 10 | — |
+| 02 | SKILLS-FRONTEND | 11 | +1 (21st.dev registry) |
 | 03 | SKILLS-BACKEND | 11 | — |
 | 04 | SKILLS-MOBILE-EXPO | 5 | — |
 | 05 | SKILLS-DEVOPS-INFRA | 17 | +5 (ecc-*) |
@@ -54,7 +54,7 @@
 | 20 | SKILLS-DISENO-UX | 6 | +6 (nuevo) |
 | 21 | SKILLS-RRHH | 6 | +6 (nuevo) |
 | 22 | SKILLS-OPERACIONES | 6 | +6 (nuevo) |
-| | **TOTAL SKILLS INSTALABLES** | **210** | +56 |
+| | **TOTAL SKILLS INSTALABLES** | **211** | +57 |
 
 ---
 
@@ -86,7 +86,7 @@ Experiencias 3D inmersivas, Three.js, WebGL, Babylon.js, animaciones cinematogr�
 
 ---
 
-## 02-SKILLS-FRONTEND (10 skills)
+## 02-SKILLS-FRONTEND (11 skills)
 
 Desarrollo frontend moderno, React/Next.js, UI/UX, temas y optimización.
 
@@ -102,6 +102,7 @@ Desarrollo frontend moderno, React/Next.js, UI/UX, temas y optimización.
 | guia-marca-colores-tipografia-SKILL.md | Aplicar colores y tipografía de marca Anthropic | brand-guidelines |
 | fabrica-temas-colores-v1-SKILL.md | Aplicar temas con colores/fuentes a artefactos (v1) | theme-factory |
 | fabrica-temas-colores-v2-SKILL.md | Aplicar temas con colores/fuentes a artefactos (v2) | theme-factory2 |
+| 21st-dev-registry-componentes-SKILL.md | Registry comunitario 21st.dev: +2000 componentes React/Tailwind/shadcn-ui instalables via CLI | nuevo (sesión 5) |
 
 ---
 
