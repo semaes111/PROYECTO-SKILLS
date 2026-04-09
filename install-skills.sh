@@ -11,7 +11,7 @@
 #   ./install-skills.sh [--all | --category 01 02 03 | --list]
 #
 # EJEMPLOS:
-#   ./install-skills.sh --all                    # Instala las 166 skills
+#   ./install-skills.sh --all                    # Instala las 194 skills
 #   ./install-skills.sh --category 01 03 07      # Solo 3D-WEB, Backend, Legal
 #   ./install-skills.sh --list                   # Muestra categorías disponibles
 #   ./install-skills.sh --uninstall              # Desinstala todas las skills
@@ -44,8 +44,8 @@ SKIPPED=0
 show_banner() {
     echo -e "${CYAN}"
     echo "╔══════════════════════════════════════════════════════════════╗"
-    echo "║     INSTALADOR DE SKILLS - PROYECTO SKILLS v3.0            ║"
-    echo "║     166 skills en 19 categorías temáticas                  ║"
+    echo "║     INSTALADOR DE SKILLS - PROYECTO SKILLS v6.0            ║"
+    echo "║     194 skills en 17 categorías temáticas                  ║"
     echo "║     Compatible con Claude Code / Cowork                    ║"
     echo "╚══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
@@ -54,27 +54,24 @@ show_banner() {
 show_categories() {
     echo -e "${BOLD}Categorías disponibles:${NC}"
     echo ""
-    echo -e "  ${CYAN}01${NC} - SKILLS-3D-WEB              (7 skills)    Three.js, WebGL, arte 3D"
-    echo -e "  ${CYAN}02${NC} - SKILLS-FRONTEND            (10 skills)  React, Next.js, UI/UX"
-    echo -e "  ${CYAN}03${NC} - SKILLS-BACKEND             (11 skills)  Node, Supabase, auth, BD"
-    echo -e "  ${CYAN}04${NC} - SKILLS-MOBILE-EXPO         (5 skills)   React Native, Expo"
-    echo -e "  ${CYAN}05${NC} - SKILLS-DEVOPS-INFRA        (12 skills)  CI/CD, deploy, Docker, MCP, RAG"
-    echo -e "  ${CYAN}06${NC} - SKILLS-DOCUMENTOS          (10 skills)  Word, PDF, Excel, PPT"
-    echo -e "  ${CYAN}07${NC} - SKILLS-LEGAL-FISCAL        (10 skills)  Contratos, compliance, schema fiscal"
-    echo -e "  ${CYAN}08${NC} - SKILLS-MARKETING-COPY      (8 skills)   Copy, campañas, SEO"
-    echo -e "  ${CYAN}09${NC} - SKILLS-UTILIDADES          (26 skills)  CLI, scraping, git, memoria, Superpowers"
-    echo -e "  ${CYAN}11${NC} - SKILLS-DATOS-ANALYTICS     (7 skills)   SQL, dashboards, stats"
-    echo -e "  ${CYAN}12${NC} - SKILLS-INGENIERIA-SOFTWARE (6 skills)   Code review, testing"
-    echo -e "  ${CYAN}13${NC} - SKILLS-FINANZAS-CONTAB     (6 skills)   Estados fin., auditoría"
-    echo -e "  ${CYAN}14${NC} - SKILLS-VENTAS-CRM          (15 skills)  Sales, Apollo, CommonRoom"
+    echo -e "  ${CYAN}01${NC} - SKILLS-3D-WEB              (19 skills)  Three.js, WebGL, shaders, animaciones"
+    echo -e "  ${CYAN}02${NC} - SKILLS-FRONTEND            (12 skills)  React, Next.js, Electron, GSAP, DESIGN.md"
+    echo -e "  ${CYAN}03${NC} - SKILLS-BACKEND             (18 skills)  Node, Supabase, MongoDB, Qdrant, AI SDK, MCP"
+    echo -e "  ${CYAN}04${NC} - SKILLS-MOBILE-EXPO         (5 skills)   React Native, Expo Router, NativeWind"
+    echo -e "  ${CYAN}05${NC} - SKILLS-DEVOPS-INFRA        (17 skills)  Docker, CI/CD, n8n, migraciones, seguridad"
+    echo -e "  ${CYAN}06${NC} - SKILLS-DOCUMENTOS          (10 skills)  Word, PDF, Excel, PPT, C4 diagrams"
+    echo -e "  ${CYAN}07${NC} - SKILLS-LEGAL-FISCAL        (10 skills)  Contratos, compliance, due diligence"
+    echo -e "  ${CYAN}08${NC} - SKILLS-MARKETING-COPY      (8 skills)   Copywriting, campañas, SEO, psicología"
+    echo -e "  ${CYAN}09${NC} - SKILLS-UTILIDADES          (46 skills)  CLI, scraping, git, memoria, multi-agente"
+    echo -e "  ${CYAN}11${NC} - SKILLS-DATOS-ANALYTICS     (7 skills)   SQL, dashboards, estadística"
+    echo -e "  ${CYAN}13${NC} - SKILLS-FINANZAS-CONTAB     (6 skills)   Estados financieros, auditoría SOX"
+    echo -e "  ${CYAN}14${NC} - SKILLS-VENTAS-CRM          (15 skills)  Sales, Apollo, CommonRoom, battlecards"
     echo -e "  ${CYAN}15${NC} - SKILLS-SOPORTE-CLIENTE     (5 skills)   Tickets, KB, escalados"
-    echo -e "  ${CYAN}16${NC} - SKILLS-PRODUCTO-PM         (6 skills)   PRDs, roadmaps, métricas"
-    echo -e "  ${CYAN}17${NC} - SKILLS-PRODUCTIVIDAD       (2 skills)   Memoria, tareas"
-    echo -e "  ${CYAN}18${NC} - SKILLS-BIOINVESTIGACION    (5 skills)   RNA-seq, Nextflow, scVI"
-    echo -e "  ${CYAN}19${NC} - SKILLS-BUSQUEDA-EMPRESAR   (3 skills)   Multi-source search"
+    echo -e "  ${CYAN}16${NC} - SKILLS-PRODUCTO-PM         (6 skills)   PRDs, roadmaps, métricas OKR"
+    echo -e "  ${CYAN}17${NC} - SKILLS-PRODUCTIVIDAD       (2 skills)   Memoria sesión, gestión tareas"
+    echo -e "  ${CYAN}18${NC} - SKILLS-BIOINVESTIGACION    (5 skills)   RNA-seq, Nextflow, scVI, Allotrope"
+    echo -e "  ${CYAN}19${NC} - SKILLS-BUSQUEDA-EMPRESAR   (3 skills)   Estrategia búsqueda, síntesis multifuente"
     echo ""
-    echo -e "${YELLOW}Nota:${NC} La categoría 10 (PLUGINS-Y-REPOS) contiene repos completos,"
-    echo "      no skills individuales. Se copian con --all automáticamente."
 }
 
 detect_target() {
@@ -299,7 +296,7 @@ while [[ $# -gt 0 ]]; do
             echo "Uso: ./install-skills.sh [OPCIÓN]"
             echo ""
             echo "Opciones:"
-            echo "  --all                    Instala las 141 skills completas"
+            echo "  --all                    Instala las 210 skills completas"
             echo "  --category 01 03 07      Instala solo las categorías indicadas"
             echo "  --list                   Muestra categorías disponibles"
             echo "  --target /ruta/proyecto  Instala en un proyecto específico"
@@ -339,7 +336,7 @@ echo -e "📂 Fuente:  ${BOLD}$SCRIPT_DIR${NC}"
 
 if [ "$MODE" = "all" ]; then
     # Instalar todas las categorías
-    for num in 01 02 03 04 05 06 07 08 09 11 12 13 14 15 16 17 18 19; do
+    for num in 01 02 03 04 05 06 07 08 09 11 12 13 14 15 16 17 18 19 20 21 22; do
         install_category "$num" "$TARGET"
     done
     install_plugins "$TARGET"
