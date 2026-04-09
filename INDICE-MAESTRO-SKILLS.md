@@ -1,13 +1,63 @@
-# ÍNDICE MAESTRO DE SKILLS - Proyecto Skills
-**Fecha de organización:** 8 de abril de 2026
-**Total de skills:** 154 (86 propias + 68 de plugins integradas)
-**Categorías:** 19 temáticas + 1 carpeta de plugins/repos
-**Plugins integrados:** knowledge-work-plugins (17 categorías) + software-architect
+# ÍNDICE MAESTRO — Proyecto Skills v4.0
+
+**Fecha de generación:** 9 de abril de 2026
+**Auditoría completa:** 606 archivos analizados
 
 ---
 
-## 01-SKILLS-3D-WEB (7 skills)
-Experiencias 3D inmersivas, Three.js, WebGL, arte generativo y visual.
+## Resumen de Recursos
+
+| Tipo de recurso | Cantidad | Descripción |
+|----------------|----------|-------------|
+| **Skills instalables** | 192 | Archivos SKILL.md en categorías 01-19 |
+| **Skills de plugins (fuente)** | 86 | SKILL.md originales en 10-PLUGINS-Y-REPOS |
+| **Commands (acciones rápidas)** | 71 | Comandos slash invocables desde plugins |
+| **Scripts Python** | 42 | Código funcional ejecutable (.py) |
+| **Scripts Shell** | 7 | Automatización bash (.sh) |
+| **Prompts (templates)** | 3 | Plantillas de prompts para evaluación |
+| **Referencias técnicas** | 62 | Docs de soporte, esquemas SQL, código fuente |
+| **Patrones software-architect** | 9 | Guías de arquitectura Next.js/Supabase |
+| **Código fuente TypeScript** | 2 | MCP server + API de memoria |
+| **Configuración** | 8 | docker-compose, tsconfig, pyproject, etc. |
+| **Documentación** | 5 | READMEs, guías de instalación |
+| **TOTAL archivos en repo** | **606** | — |
+
+### Herramientas funcionales (invocables o ejecutables): **412**
+
+> Skills (192) + Plugin skills (86) + Commands (71) + Scripts (42+7) + Prompts (3) + Architect patterns (9) + TS source (2) = 412
+
+---
+
+## Categorías: 19 temáticas + 1 de plugins/repos
+
+| # | Categoría | Skills | Nuevas (sesión 2-3) |
+|---|-----------|--------|---------------------|
+| 01 | SKILLS-3D-WEB | 19 | +12 (web design Awwwards) |
+| 02 | SKILLS-FRONTEND | 10 | — |
+| 03 | SKILLS-BACKEND | 11 | — |
+| 04 | SKILLS-MOBILE-EXPO | 5 | — |
+| 05 | SKILLS-DEVOPS-INFRA | 17 | +5 (ecc-*) |
+| 06 | SKILLS-DOCUMENTOS | 10 | — |
+| 07 | SKILLS-LEGAL-FISCAL | 10 | — |
+| 08 | SKILLS-MARKETING-COPY | 8 | — |
+| 09 | SKILLS-UTILIDADES | 47 | +21 (ecc-*) |
+| 10 | PLUGINS-Y-REPOS | 86 skills + 71 cmds | — |
+| 11 | SKILLS-DATOS-ANALYTICS | 7 | — |
+| 12 | SKILLS-INGENIERIA-SOFTWARE | 6 | — |
+| 13 | SKILLS-FINANZAS-CONTABILIDAD | 6 | — |
+| 14 | SKILLS-VENTAS-CRM | 15 | — |
+| 15 | SKILLS-SOPORTE-CLIENTE | 5 | — |
+| 16 | SKILLS-PRODUCTO-PM | 6 | — |
+| 17 | SKILLS-PRODUCTIVIDAD | 2 | — |
+| 18 | SKILLS-BIOINVESTIGACION | 5 | — |
+| 19 | SKILLS-BUSQUEDA-EMPRESARIAL | 3 | — |
+| | **TOTAL SKILLS INSTALABLES** | **192** | +38 |
+
+---
+
+## 01-SKILLS-3D-WEB (19 skills)
+
+Experiencias 3D inmersivas, Three.js, WebGL, Babylon.js, animaciones cinematográficas, arte generativo, video programático, físicas web y efectos no-code.
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
@@ -18,10 +68,23 @@ Experiencias 3D inmersivas, Three.js, WebGL, arte generativo y visual.
 | componentes-threejs-react-fiber-SKILL.md | Componentes Three.js + React Three Fiber copy-paste | threejs-react-components |
 | arte-visual-canvas-png-pdf-SKILL.md | Crear arte visual en .png y .pdf con filosofía de diseño | canvas-design |
 | arte-generativo-algoritmo-p5js-SKILL.md | Arte algorítmico con p5.js y randomness semilla | algorithmic-art |
+| lenis-smooth-scroll-cinematico-SKILL.md | Smooth scroll cinematográfico con Lenis (60fps) | **NUEVA** — Lenis engine |
+| theatre-js-timeline-animacion-SKILL.md | Timeline de animación keyframe con Theatre.js | **NUEVA** — Theatre.js |
+| rive-animaciones-interactivas-SKILL.md | Animaciones interactivas con Rive state machines | **NUEVA** — Rive |
+| css-scroll-driven-animations-SKILL.md | Animaciones CSS nativas con animation-timeline | **NUEVA** — CSS API nativo |
+| view-transitions-api-SKILL.md | Transiciones fluidas entre vistas (SPA/MPA) | **NUEVA** — View Transitions API |
+| shaders-webgpu-threejs-SKILL.md | Shaders GLSL/WGSL + TSL + ShaderGradient en Three.js | **NUEVA** — WebGPU/Shaders |
+| spline-3d-no-code-SKILL.md | Editor 3D no-code con embed React y API eventos | **NUEVA** — Spline |
+| remotion-video-react-SKILL.md | Video programático con React (render, spring, audio) | **NUEVA** — Remotion |
+| fisicas-2d-3d-web-SKILL.md | Físicas 2D/3D: Matter.js + Cannon-es + Rapier | **NUEVA** — Física web |
+| mojs-motion-graphics-SKILL.md | Motion graphics: bursts, particles, shapes, timelines | **NUEVA** — Mo.js |
+| unicorn-studio-webgl-SKILL.md | Efectos WebGL no-code: 70+ shaders, embed 36KB | **NUEVA** — Unicorn Studio |
+| babylonjs-game-engine-SKILL.md | Game engine web: WebGPU, Havok physics, PBR, GUI 3D | **NUEVA** — Babylon.js |
 
 ---
 
 ## 02-SKILLS-FRONTEND (10 skills)
+
 Desarrollo frontend moderno, React/Next.js, UI/UX, temas y optimización.
 
 | Archivo | Función | Origen |
@@ -40,6 +103,7 @@ Desarrollo frontend moderno, React/Next.js, UI/UX, temas y optimización.
 ---
 
 ## 03-SKILLS-BACKEND (11 skills)
+
 Backend, bases de datos, autenticación, APIs y servicios.
 
 | Archivo | Función | Origen |
@@ -59,6 +123,7 @@ Backend, bases de datos, autenticación, APIs y servicios.
 ---
 
 ## 04-SKILLS-MOBILE-EXPO (5 skills)
+
 Desarrollo móvil con React Native y Expo.
 
 | Archivo | Función | Origen |
@@ -71,27 +136,34 @@ Desarrollo móvil con React Native y Expo.
 
 ---
 
-## 05-SKILLS-DEVOPS-INFRA (12 skills)
-CI/CD, despliegue, infraestructura, orquestación Docker y agentes autónomos.
+## 05-SKILLS-DEVOPS-INFRA (17 skills)
 
-| Archivo | Función | Origen |
-|---------|---------|--------|
-| automatizacion-flujos-n8n-SKILL.md | Flujos de automatización n8n para apps Next.js/Supabase | n8n-workflows |
-| cicd-eas-workflows-expo-SKILL.md | CI/CD con EAS workflows YAML para Expo | expo-cicd-workflows |
-| flujos-eas-yaml-pipelines-SKILL.md | Escribir ficheros YAML EAS workflows | eas-workflows-skill |
-| despliegue-expo-tiendas-web-SKILL.md | Deploy Expo: App Store, Play Store, web, API routes | expo-deployment |
-| actualizacion-sdk-expo-SKILL.md | Actualizar SDK Expo y arreglar dependencias | upgrading-expo |
-| paas-selfhosted-coolify-docker-SKILL.md | PaaS self-hosted con Coolify: Docker, SSL, push-deploy | selfhosted-paas-deploy |
-| actualizador-dependencias-seguro-SKILL.md | Actualizar dependencias de forma segura y automática | dependency-updater |
-| memoria-persistente-7-capas-SKILL.md | Sistema MEMU 7 capas: Redis/Supabase/pgvector/n8n (TypeScript) | persistent-memory-7layer |
-| orquestacion-docker-agente-autonomo-SKILL.md | Agente Docker autónomo: ClaudeMaxRunner $0 API, SmartRouter, VeracityCore (Python) | docker-agent-orchestration |
-| patrones-referencia-mcp-servers-SKILL.md | Patrones de 20+ servidores MCP oficiales (bootstrap, tools, handlers, error) | mcp-reference-patterns |
-| mcp-n8n-workflow-builder-SKILL.md | MCP server para generar workflows n8n programáticamente | mcp-n8n-workflow-builder |
-| rag-serverless-pgvector-SKILL.md | Blueprint RAG minimalista: Vercel + Supabase pgvector + embeddings | rag-serverless-pgvector |
+CI/CD, despliegue, infraestructura, Docker, MCP servers, memoria, agentes autónomos y seguridad.
+
+| Archivo | Función | Origen | Extras |
+|---------|---------|--------|--------|
+| automatizacion-flujos-n8n-SKILL.md | Flujos de automatización n8n para apps Next.js/Supabase | n8n-workflows | — |
+| cicd-eas-workflows-expo-SKILL.md | CI/CD con EAS workflows YAML para Expo | expo-cicd-workflows | — |
+| flujos-eas-yaml-pipelines-SKILL.md | Escribir ficheros YAML EAS workflows | eas-workflows-skill | — |
+| despliegue-expo-tiendas-web-SKILL.md | Deploy Expo: App Store, Play Store, web, API routes | expo-deployment | — |
+| actualizacion-sdk-expo-SKILL.md | Actualizar SDK Expo y arreglar dependencias | upgrading-expo | — |
+| paas-selfhosted-coolify-docker-SKILL.md | PaaS self-hosted con Coolify: Docker, SSL, push-deploy | selfhosted-paas-deploy | — |
+| actualizador-dependencias-seguro-SKILL.md | Actualizar dependencias de forma segura y automática | dependency-updater | — |
+| patrones-referencia-mcp-servers-SKILL.md | Patrones de 20+ servidores MCP oficiales | mcp-reference-patterns | — |
+| rag-serverless-pgvector-SKILL.md | Blueprint RAG: Vercel + Supabase pgvector + embeddings | rag-serverless-pgvector | — |
+| memoria-persistente-7-capas/ | Sistema MEMU 7 capas: Redis/Supabase/pgvector (TypeScript) | persistent-memory-7layer | `memu-api.ts`, `memu-schema.sql` |
+| orquestacion-docker-agente-autonomo/ | Agente Docker autónomo: ClaudeMaxRunner $0 API, SmartRouter | docker-agent-orchestration | 11 refs: `.py`, `.sql`, `Dockerfile`, `docker-compose.yml` |
+| mcp-n8n-workflow-builder/ | MCP server para generar workflows n8n programáticamente | mcp-n8n-workflow-builder | standalone: `index.ts`, `package.json`, `tsconfig.json`, `INSTALL.md` |
+| ecc-security-review-auditoria-seguridad/ | Auditoría de seguridad: OWASP, auth, RLS, secrets, deps | **NUEVA** — ecc-security-review | `cloud-infrastructure-security.md` |
+| ecc-database-migrations-migraciones-SKILL.md | Patrones de migración BD: versionado, rollback, zero-downtime | **NUEVA** — ecc-database-migrations | — |
+| ecc-deployment-patterns-despliegue-SKILL.md | Patrones de deploy: blue-green, canary, rolling, feature flags | **NUEVA** — ecc-deployment-patterns | — |
+| ecc-docker-patterns-patrones-contenedores-SKILL.md | Patrones Docker: multi-stage, health checks, compose patterns | **NUEVA** — ecc-docker-patterns | — |
+| ecc-security-scan-escaneo-vulnerabilidades-SKILL.md | Escaneo de vulnerabilidades: SAST, DAST, deps, secrets | **NUEVA** — ecc-security-scan | — |
 
 ---
 
 ## 06-SKILLS-DOCUMENTOS (10 skills)
+
 Creación y manipulación de documentos: Word, PDF, Excel, PowerPoint, diagramas.
 
 | Archivo | Función | Origen |
@@ -110,6 +182,7 @@ Creación y manipulación de documentos: Word, PDF, Excel, PowerPoint, diagramas
 ---
 
 ## 07-SKILLS-LEGAL-FISCAL (10 skills + references)
+
 Derecho tributario español, due diligence, compliance y gestión legal.
 
 | Archivo | Función | Origen |
@@ -123,12 +196,12 @@ Derecho tributario español, due diligence, compliance y gestión legal.
 | triaje-nda-verde-amarillo-rojo-SKILL.md | Clasificar NDAs: GREEN/YELLOW/RED para aprobación rápida | legal:nda-triage |
 | briefing-reuniones-legales-acciones-SKILL.md | Preparar briefings reuniones legales + action items | legal:meeting-briefing |
 | respuestas-plantilla-consultas-legales-SKILL.md | Respuestas template para consultas legales frecuentes | legal:canned-responses |
-| schema-fiscal-espanol-supabase-SKILL.md | Schema Supabase completo: 11 tablas dominio fiscal español (NIF, IVA, IRPF, modelos 303/130/200) | schema-fiscal-espanol-supabase |
-| demandas-tributarias-references/ | Carpeta con plantillas y referencias normativas | (adjunta) |
+| schema-fiscal-espanol-supabase-SKILL.md | Schema Supabase: 11 tablas dominio fiscal español | schema-fiscal-espanol-supabase |
 
 ---
 
 ## 08-SKILLS-MARKETING-COPY (8 skills)
+
 Copywriting, psicología, campañas, contenido, analytics y voz de marca.
 
 | Archivo | Función | Origen |
@@ -144,8 +217,11 @@ Copywriting, psicología, campañas, contenido, analytics y voz de marca.
 
 ---
 
-## 09-SKILLS-UTILIDADES (26 skills)
-Herramientas, CLI, scraping, comunicación, memoria, meta-skills, plugins y productividad.
+## 09-SKILLS-UTILIDADES (47 skills)
+
+Herramientas CLI, scraping, comunicación, memoria, meta-skills, plugins, productividad y Engineering Claude Code (ecc-*).
+
+### Skills base (26)
 
 | Archivo | Función | Origen |
 |---------|---------|--------|
@@ -168,29 +244,101 @@ Herramientas, CLI, scraping, comunicación, memoria, meta-skills, plugins y prod
 | guia-creacion-skills-efectivas-SKILL.md | Guía para crear skills especializadas efectivas | this-skill-covers... |
 | personalizar-plugins-cowork-SKILL.md | Personalizar plugins Cowork para org específica | cowork-plugin-customizer |
 | crear-plugins-cowork-desde-cero-SKILL.md | Crear plugins Cowork nuevos desde cero | create-cowork-plugin |
-| memoria-sesion-persistente-SKILL.md | Pseudo-memoria persistente entre sesiones via CLAUDE-MEMORY.md | session-memory |
-| brainstorming-diseno-colaborativo-SKILL.md | Fase de diseño colaborativo antes de implementar (Superpowers) | brainstorming |
-| desarrollo-dirigido-subagentes-SKILL.md | Desarrollo con subagentes frescos + review 2 fases (Superpowers) | subagent-driven-development |
-| despacho-agentes-paralelos-SKILL.md | Coordinar agentes paralelos en tareas independientes (Superpowers) | dispatching-parallel-agents |
-| escritura-planes-implementacion-SKILL.md | Planes de implementación bite-sized con código completo (Superpowers) | writing-plans |
-| finalizar-rama-desarrollo-SKILL.md | Workflow de finalización: merge/PR/keep/discard (Superpowers) | finishing-a-development-branch |
-| aislamiento-git-worktrees-SKILL.md | Git worktrees para aislamiento de features (Superpowers) | using-git-worktrees |
+| memoria-sesion-persistente/ | Pseudo-memoria persistente entre sesiones via CLAUDE-MEMORY.md | session-memory |
+| brainstorming-diseno-colaborativo-SKILL.md | Fase de diseño colaborativo antes de implementar | SUPERPOWERS |
+| desarrollo-dirigido-subagentes-SKILL.md | Desarrollo con subagentes frescos + review 2 fases | SUPERPOWERS |
+| despacho-agentes-paralelos-SKILL.md | Coordinar agentes paralelos en tareas independientes | SUPERPOWERS |
+| escritura-planes-implementacion-SKILL.md | Planes de implementación bite-sized con código completo | SUPERPOWERS |
+| finalizar-rama-desarrollo-SKILL.md | Workflow de finalización: merge/PR/keep/discard | SUPERPOWERS |
+| aislamiento-git-worktrees-SKILL.md | Git worktrees para aislamiento de features | SUPERPOWERS |
+
+### Skills Engineering Claude Code — ecc-* (21)
+
+| Archivo | Función | Extras |
+|---------|---------|--------|
+| ecc-agent-introspection-debugging-SKILL.md | Debugging de agentes IA: logs, contexto, herramientas | — |
+| ecc-agentic-engineering-eval-first-SKILL.md | Eval-first: escribir evaluaciones antes de código | — |
+| ecc-autonomous-loops-bucles-agentes-SKILL.md | Bucles autónomos de agentes con checkpoints | — |
+| ecc-blueprint-planificacion-features-SKILL.md | Planificación de features con blueprint detallado | — |
+| ecc-codebase-onboarding-exploracion-SKILL.md | Onboarding automático a codebase desconocido | — |
+| ecc-context-budget-auditoria-tokens-SKILL.md | Auditoría y optimización de presupuesto de contexto | — |
+| ecc-continuous-agent-loop-infinito-SKILL.md | Loop continuo de agente con auto-supervisión | — |
+| ecc-continuous-learning-auto-aprendizaje-SKILL.md | Auto-aprendizaje entre sesiones (v1) | — |
+| ecc-continuous-learning-v2-instintos-SKILL.md | Instintos aprendidos de experiencias pasadas (v2) | — |
+| ecc-deep-research-investigacion-SKILL.md | Investigación profunda multi-fuente sistematizada | — |
+| ecc-eval-harness-desarrollo-evaluaciones-SKILL.md | Framework para crear y ejecutar evaluaciones | — |
+| ecc-prompt-optimizer-optimizar-prompts-SKILL.md | Optimizar prompts con técnicas iterativas | — |
+| ecc-repo-scan-escaneo-repositorio-SKILL.md | Escaneo completo de repositorios desconocidos | — |
+| ecc-search-first-investigar-antes-codear-SKILL.md | Investigar antes de codear: grep, read, verify | — |
+| ecc-tdd-workflow-test-driven-SKILL.md | Workflow TDD estricto para agentes | — |
+| ecc-team-builder-multi-agente-SKILL.md | Construir equipos multi-agente con roles | — |
+| ecc-verification-loop-quality-gates-SKILL.md | Quality gates: build, test, lint, type-check | — |
+| ecc-rules-distill-extraer-reglas/ | Extraer reglas de codebase para CLAUDE.md | 2 scripts: `scan-rules.sh`, `scan-skills.sh` |
+| ecc-skill-comply-compliance-medicion/ | Medir compliance de skills con specs | 6 scripts .py, 3 prompts .md, `pyproject.toml` |
+| ecc-skill-stocktake-inventario/ | Inventario automático de skills instaladas | 3 scripts: `scan.sh`, `quick-diff.sh`, `save-results.sh` |
+| ecc-strategic-compact-compactacion/ | Compactación estratégica de contexto | 1 script: `suggest-compact.sh` |
 
 ---
 
 ## 10-PLUGINS-Y-REPOS
-Plugins instalados y repositorios de marketplace (archivos originales completos).
 
-### software-architect/
-Plugin local con 9 archivos: patrones arquitectura Next.js, Supabase DB, API routes, migraciones, scaffold features, optimización rendimiento, design patterns.
+Plugins instalados y repositorios de marketplace. Contiene las fuentes originales de las skills de plugins.
 
-### knowledge-work-plugins/
-Marketplace con 17 categorías de plugins profesionales:
-bio-research, cowork-plugin-management, customer-support, data, design, engineering, enterprise-search, finance, human-resources, legal, marketing, operations, partner-built, product-management, productivity, sales.
+### 10.1 knowledge-work-plugins/ (17 dominios)
+
+| Dominio | Skills | Commands | References | Notas |
+|---------|--------|----------|------------|-------|
+| apollo | 3 | 0 | 0 | Leads, enriquecimiento, secuencias |
+| bio-research | 5 | 1 | 32 | RNA-seq, scVI, Nextflow, Allotrope |
+| common-room | 6 | 2 | 8 | Señales, outreach, briefings |
+| cowork-plugin-management | 2 | 0 | 4 | Crear/personalizar plugins |
+| customer-support | 5 | 5 | 0 | Triaje, KB, escalados |
+| data | 7 | 6 | 4 | SQL, dashboards, visualización |
+| **design** | **6** | **6** | **0** | **Solo en plugins — sin categoría propia** |
+| engineering | 6 | 6 | 0 | Code review, incidents, testing |
+| enterprise-search | 3 | 2 | 0 | Multi-source, síntesis |
+| finance | 6 | 5 | 0 | SOX, cierres, P&L |
+| **human-resources** | **6** | **6** | **0** | **Solo en plugins — sin categoría propia** |
+| legal | 6 | 7 | 0 | Contratos, NDA, compliance |
+| marketing | 5 | 7 | 0 | Contenido, campañas, SEO |
+| **operations** | **6** | **6** | **0** | **Solo en plugins — sin categoría propia** |
+| product-management | 6 | 7 | 0 | PRDs, roadmaps, sprints |
+| productivity | 2 | 2 | 0 | Memoria, tareas |
+| sales | 6 | 3 | 0 | Outreach, battlecards, forecast |
+| **TOTAL** | **86** | **71** | **48** | — |
+
+#### Dominios sin categoría propia (18 skills + 18 commands)
+
+**design/** (6 skills + 6 commands):
+- Skills: accessibility-review, design-critique, design-handoff, design-system-management, user-research, ux-writing
+- Commands: accessibility, critique, design-system, handoff, research-synthesis, ux-copy
+
+**human-resources/** (6 skills + 6 commands):
+- Skills: compensation-benchmarking, employee-handbook, interview-prep, org-planning, people-analytics, recruiting-pipeline
+- Commands: comp-analysis, draft-offer, onboarding, people-report, performance-review, policy-lookup
+
+**operations/** (6 skills + 6 commands):
+- Skills: change-management, compliance-tracking, process-optimization, resource-planning, risk-assessment, vendor-management
+- Commands: capacity-plan, change-request, process-doc, runbook, status-report, vendor-review
+
+### 10.2 software-architect/ (9 patrones)
+
+| Archivo | Función |
+|---------|---------|
+| architecture-review.md | Revisión de arquitectura del proyecto |
+| design-patterns-antipatterns.md | Patrones y anti-patrones de diseño |
+| generate-api-route.md | Generar API routes Next.js |
+| generate-migration.md | Generar migraciones Supabase |
+| nextjs-architecture-patterns.md | Patrones de arquitectura Next.js |
+| optimize-performance.md | Optimización de rendimiento |
+| review-architecture.md | Review de decisiones arquitectónicas |
+| scaffold-feature.md | Scaffolding de features completas |
+| supabase-database-architecture.md | Arquitectura de BD Supabase |
 
 ---
 
 ## 11-SKILLS-DATOS-ANALYTICS (7 skills)
+
 Análisis de datos, SQL, dashboards, visualización y estadística.
 
 | Archivo | Función | Origen |
@@ -206,6 +354,7 @@ Análisis de datos, SQL, dashboards, visualización y estadística.
 ---
 
 ## 12-SKILLS-INGENIERIA-SOFTWARE (6 skills)
+
 Code review, diseño de sistemas, testing, incidentes y deuda técnica.
 
 | Archivo | Función | Origen |
@@ -220,6 +369,7 @@ Code review, diseño de sistemas, testing, incidentes y deuda técnica.
 ---
 
 ## 13-SKILLS-FINANZAS-CONTABILIDAD (6 skills)
+
 Estados financieros, asientos, cierres, auditoría y conciliación.
 
 | Archivo | Función | Origen |
@@ -234,6 +384,7 @@ Estados financieros, asientos, cierres, auditoría y conciliación.
 ---
 
 ## 14-SKILLS-VENTAS-CRM (15 skills)
+
 Investigación cuentas, outreach, inteligencia competitiva, Apollo y Common Room.
 
 | Archivo | Función | Origen |
@@ -257,6 +408,7 @@ Investigación cuentas, outreach, inteligencia competitiva, Apollo y Common Room
 ---
 
 ## 15-SKILLS-SOPORTE-CLIENTE (5 skills)
+
 Triaje tickets, respuestas, escalados, base de conocimiento e investigación.
 
 | Archivo | Función | Origen |
@@ -270,6 +422,7 @@ Triaje tickets, respuestas, escalados, base de conocimiento e investigación.
 ---
 
 ## 16-SKILLS-PRODUCTO-PM (6 skills)
+
 PRDs, roadmaps, métricas, análisis competitivo e investigación de usuarios.
 
 | Archivo | Función | Origen |
@@ -284,6 +437,7 @@ PRDs, roadmaps, métricas, análisis competitivo e investigación de usuarios.
 ---
 
 ## 17-SKILLS-PRODUCTIVIDAD (2 skills)
+
 Gestión de tareas y sistema de memoria persistente.
 
 | Archivo | Función | Origen |
@@ -294,6 +448,7 @@ Gestión de tareas y sistema de memoria persistente.
 ---
 
 ## 18-SKILLS-BIOINVESTIGACION (5 skills)
+
 Bioinformática, single-cell RNA, pipelines Nextflow y selección de problemas científicos.
 
 | Archivo | Función | Origen |
@@ -307,6 +462,7 @@ Bioinformática, single-cell RNA, pipelines Nextflow y selección de problemas c
 ---
 
 ## 19-SKILLS-BUSQUEDA-EMPRESARIAL (3 skills)
+
 Búsqueda multi-fuente empresarial, síntesis y gestión de conectores.
 
 | Archivo | Función | Origen |
@@ -317,32 +473,212 @@ Búsqueda multi-fuente empresarial, síntesis y gestión de conectores.
 
 ---
 
-## RESUMEN EJECUTIVO
+## INVENTARIO COMPLETO DE COMMANDS (71)
 
-| # | Categoría | Skills | Tipo |
-|---|-----------|--------|------|
-| 01 | 3D / Web | 7 | Propias |
-| 02 | Frontend | 10 | Propias |
-| 03 | Backend | 11 | Propias |
-| 04 | Mobile / Expo | 5 | Propias |
-| 05 | DevOps / Infra | 7 | Propias |
-| 06 | Documentos | 10 | Propias |
-| 07 | Legal / Fiscal | 9 | Propias + Plugin |
-| 08 | Marketing / Copy | 8 | Propias + Plugin |
-| 09 | Utilidades | 19 | Propias + Plugin |
-| 10 | Plugins y Repos | — | Repos completos |
-| 11 | Datos / Analytics | 7 | Plugin |
-| 12 | Ingeniería Software | 6 | Plugin |
-| 13 | Finanzas / Contabilidad | 6 | Plugin |
-| 14 | Ventas / CRM | 15 | Plugin |
-| 15 | Soporte Cliente | 5 | Plugin |
-| 16 | Producto / PM | 6 | Plugin |
-| 17 | Productividad | 2 | Plugin |
-| 18 | Bioinvestigación | 5 | Plugin |
-| 19 | Búsqueda Empresarial | 3 | Plugin |
-| | **TOTAL** | **141** | |
+Acciones rápidas slash invocables desde los plugins instalados.
+
+| Dominio | Command | Acción |
+|---------|---------|--------|
+| bio-research | /start | Configurar entorno bio-research |
+| common-room | /generate-account-plan | Plan de cuenta desde señales |
+| common-room | /weekly-brief | Briefing semanal llamadas externas |
+| customer-support | /draft-response | Redactar respuesta al cliente |
+| customer-support | /escalate | Empaquetar escalado a ingeniería |
+| customer-support | /kb-article | Crear artículo KB desde ticket resuelto |
+| customer-support | /research | Investigar pregunta multi-fuente |
+| customer-support | /triage | Triaje y priorización de ticket |
+| data | /analyze | Responder preguntas de datos |
+| data | /build-dashboard | Dashboard HTML interactivo |
+| data | /create-viz | Visualización Python publication-quality |
+| data | /explore-data | Perfilar y explorar dataset |
+| data | /validate | QA de análisis antes de compartir |
+| data | /write-query | SQL optimizado multi-dialecto |
+| design | /accessibility | Auditoría de accesibilidad |
+| design | /critique | Crítica de diseño constructiva |
+| design | /design-system | Gestión design system |
+| design | /handoff | Handoff diseño → desarrollo |
+| design | /research-synthesis | Síntesis de investigación UX |
+| design | /ux-copy | Copywriting UX/microcopy |
+| engineering | /architecture | ADR (Architecture Decision Record) |
+| engineering | /debug | Sesión debugging estructurada |
+| engineering | /deploy-checklist | Checklist pre-deployment |
+| engineering | /incident | Workflow respuesta a incidente |
+| engineering | /review | Code review seguridad y performance |
+| engineering | /standup | Generar update de standup |
+| enterprise-search | /digest | Digest diario/semanal multi-fuente |
+| enterprise-search | /search | Búsqueda unificada multi-fuente |
+| finance | /income-statement | Generar P&L con comparación periodos |
+| finance | /journal-entry | Preparar asiento contable |
+| finance | /reconciliation | Conciliación de cuentas |
+| finance | /sox-testing | Muestreo y testing SOX 404 |
+| finance | /variance-analysis | Análisis varianzas budget vs actual |
+| human-resources | /comp-analysis | Análisis de compensación |
+| human-resources | /draft-offer | Redactar oferta de empleo |
+| human-resources | /onboarding | Plan de onboarding |
+| human-resources | /people-report | Informe de personas/métricas |
+| human-resources | /performance-review | Revisión de desempeño |
+| human-resources | /policy-lookup | Consultar políticas internas |
+| legal | /brief | Briefing contextual legal |
+| legal | /compliance-check | Check compliance de acción/feature |
+| legal | /respond | Respuesta a consulta legal frecuente |
+| legal | /review-contract | Revisar contrato con redlines |
+| legal | /signature-request | Preparar doc para e-signature |
+| legal | /triage-nda | Triaje rápido de NDA entrante |
+| legal | /vendor-check | Status acuerdos con vendor |
+| marketing | /brand-review | Revisar contenido vs brand voice |
+| marketing | /campaign-plan | Brief de campaña completo |
+| marketing | /competitive-brief | Comparación competitiva |
+| marketing | /draft-content | Crear contenido multi-canal |
+| marketing | /email-sequence | Diseñar secuencia de emails |
+| marketing | /performance-report | Informe rendimiento marketing |
+| marketing | /seo-audit | Auditoría SEO completa |
+| operations | /capacity-plan | Plan de capacidad |
+| operations | /change-request | Solicitud de cambio |
+| operations | /process-doc | Documentar proceso |
+| operations | /runbook | Crear runbook operacional |
+| operations | /status-report | Informe de estado |
+| operations | /vendor-review | Revisión de proveedor |
+| product-management | /competitive-brief | Brief competitivo |
+| product-management | /metrics-review | Revisión métricas producto |
+| product-management | /roadmap-update | Actualizar roadmap |
+| product-management | /sprint-planning | Planificar sprint |
+| product-management | /stakeholder-update | Update a stakeholders |
+| product-management | /synthesize-research | Sintetizar investigación usuarios |
+| product-management | /write-spec | Escribir PRD/feature spec |
+| productivity | /start | Inicializar sistema productividad |
+| productivity | /update | Sincronizar tareas y memoria |
+| sales | /call-summary | Resumen llamada + follow-up |
+| sales | /forecast | Forecast weighted con escenarios |
+| sales | /pipeline-review | Análisis salud pipeline + acciones |
 
 ---
 
-*Generado automáticamente el 8 de abril de 2026*
+## INVENTARIO DE SCRIPTS (49 ejecutables)
+
+### Shell Scripts (7)
+
+| Script | Ubicación | Función |
+|--------|-----------|---------|
+| install-skills.sh | / (raíz) | Instalador automático de 192 skills |
+| scan-rules.sh | ecc-rules-distill/scripts/ | Escanear reglas de codebase |
+| scan-skills.sh | ecc-rules-distill/scripts/ | Escanear skills instaladas |
+| scan.sh | ecc-skill-stocktake/scripts/ | Inventario de skills |
+| quick-diff.sh | ecc-skill-stocktake/scripts/ | Diff rápido de cambios |
+| save-results.sh | ecc-skill-stocktake/scripts/ | Guardar resultados de scan |
+| suggest-compact.sh | ecc-strategic-compact/ | Sugerir compactación de contexto |
+
+### Python Scripts (42)
+
+| Área | Scripts | Función |
+|------|---------|---------|
+| ecc-skill-comply | 6 (.py) + 3 (.md prompts) | Compliance de skills: classifier, parser, grader, runner, generators |
+| bio-research/nextflow | 9 | Pipelines: sample generation, genome management, SRA/GEO fetching |
+| bio-research/scvi-tools | 8 | ML: clustering, DE analysis, model training, batch correction, spatial |
+| bio-research/single-cell-qc | 3 | QC: filtering, MAD analysis, visualization |
+| bio-research/instrument-data | 4 | Parsers: Allotrope format conversion |
+| data/context-extractor | 1 | Schema discovery para data warehouses |
+| docker-agent-orchestration/refs | 7 | Agent: claude_runner, router, mem0, veracity, watcher, agentic_loop |
+
+---
+
+## INVENTARIO DE REFERENCIAS (62 archivos)
+
+| Área | Archivos | Contenido |
+|------|----------|-----------|
+| bio-research (Nextflow) | 12 | Configs, guides, pipeline docs |
+| bio-research (scvi-tools) | 8 | Model guides, analysis patterns |
+| bio-research (instrument) | 3 | Format specs, parser guides |
+| bio-research (general) | 9 | scRNA-seq workflow, QC patterns |
+| common-room | 8 | API docs, signal types, enrichment |
+| cowork-plugin-management | 4 | Plugin structure, manifest specs |
+| data/context-extractor | 4 | Schema examples, query patterns |
+| docker-agent-orchestration | 11 | Python source, SQL schemas, Docker configs |
+| ecc-security-review | 1 | Cloud infrastructure security checklist |
+| memoria-persistente-7-capas | 2 | TypeScript API, SQL schema |
+
+---
+
+## CLASIFICACIÓN DE INVOCABILIDAD
+
+### A. Cowork invoca automáticamente (210 herramientas)
+
+Cowork detecta y puede invocar estas herramientas sin intervención del usuario:
+
+**76 skills directas** — aparecen en el system-reminder como skills disponibles:
+- 01: 7 skills base (no las 12 nuevas)
+- 02-09: todas las skills originales (pre ecc-*)
+- Más las skills de session-memory, docker-agent-orchestration, persistent-memory-7layer
+
+**134 plugin skills/commands** — de los plugins instalados (knowledge-work-plugins):
+- 86 skills de plugin (todas las de los 17 dominios)
+- 48 comandos (los que están en plugins con MCP activo: n8n, nexthorizont-dev, supabase-backend-manager, bio-research, customer-support, data, enterprise-search, finance, legal, marketing, product-management, productivity, sales, engineering, cowork-plugin-management)
+
+### B. Requieren restart de Cowork (38 skills)
+
+Instaladas en `.claude/skills/` pero NO aparecen en system-reminder hasta reiniciar:
+
+**12 skills 3D-WEB nuevas:**
+lenis, theatre-js, rive, css-scroll-driven, view-transitions, shaders-webgpu, spline, remotion, fisicas-2d-3d, mojs, unicorn-studio, babylonjs
+
+**5 skills DevOps nuevas (ecc-*):**
+ecc-database-migrations, ecc-deployment-patterns, ecc-docker-patterns, ecc-security-scan, ecc-security-review
+
+**21 skills Utilidades nuevas (ecc-*):**
+ecc-agent-introspection, ecc-agentic-engineering-eval-first, ecc-autonomous-loops, ecc-blueprint, ecc-codebase-onboarding, ecc-context-budget, ecc-continuous-agent-loop, ecc-continuous-learning (v1+v2), ecc-deep-research, ecc-eval-harness, ecc-prompt-optimizer, ecc-repo-scan, ecc-rules-distill, ecc-search-first, ecc-skill-comply, ecc-skill-stocktake, ecc-strategic-compact, ecc-tdd-workflow, ecc-team-builder, ecc-verification-loop
+
+### C. Solo en plugins (no extraídas a categorías — 18 skills + 18 commands)
+
+Disponibles en `10-PLUGINS-Y-REPOS/` pero sin skill instalable equivalente:
+- **design**: 6 skills + 6 commands
+- **human-resources**: 6 skills + 6 commands
+- **operations**: 6 skills + 6 commands
+
+### D. Solo referencia / no invocables directamente
+
+- 9 patrones software-architect (guías de lectura)
+- 62 ficheros de referencia (soporte a skills)
+- 42 scripts Python (ejecutables vía bash, no invocables como skills)
+- 7 scripts Shell (ejecutables vía bash)
+- 3 prompts (templates para ecc-skill-comply)
+
+---
+
+## ARCHIVOS DE INFRAESTRUCTURA DEL REPO
+
+| Archivo | Función |
+|---------|---------|
+| README.md | Documentación principal del proyecto |
+| GUIA-INSTALACION.md | Guía completa de instalación (23KB) |
+| INDICE-MAESTRO-SKILLS.md | Este documento |
+| install-skills.sh | Instalador automático v3.0 |
+| github-directory.html | Snapshot visual del repo |
+
+---
+
+## GRAN RESUMEN
+
+```
+PROYECTO-SKILLS v4.0
+├── 192 skills instalables (19 categorías)
+│   ├── 183 skills planas (*-SKILL.md)
+│   └── 9 skills con directorio (SKILL.md + extras)
+├── 86 skills de plugins (fuente, 17 dominios)
+├── 71 commands slash (acciones rápidas)
+├── 49 scripts ejecutables (42 Python + 7 Shell)
+├── 62 ficheros de referencia técnica
+├── 9 patrones software-architect
+├── 3 prompts template
+├── 8 ficheros de configuración
+├── 5 documentos de infraestructura
+└── 606 archivos totales
+
+HERRAMIENTAS FUNCIONALES: 412
+INVOCABLES POR COWORK: 210 (76 directas + 134 plugin)
+PENDIENTES DE RESTART: 38
+SOLO EN PLUGINS (sin extraer): 36 (18 skills + 18 commands)
+```
+
+---
+
+*Generado el 9 de abril de 2026 — Auditoría completa de 606 archivos*
 *Repositorio: https://github.com/semaes111/PROYECTO-SKILLS*
