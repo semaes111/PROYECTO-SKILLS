@@ -9,7 +9,7 @@
 
 | Tipo de recurso | Cantidad | Descripción |
 |----------------|----------|-------------|
-| **Skills instalables** | 192 | Archivos SKILL.md en categorías 01-19 |
+| **Skills instalables** | 210 | Archivos SKILL.md en categorías 01-22 |
 | **Skills de plugins (fuente)** | 86 | SKILL.md originales en 10-PLUGINS-Y-REPOS |
 | **Commands (acciones rápidas)** | 71 | Comandos slash invocables desde plugins |
 | **Scripts Python** | 42 | Código funcional ejecutable (.py) |
@@ -22,13 +22,13 @@
 | **Documentación** | 5 | READMEs, guías de instalación |
 | **TOTAL archivos en repo** | **606** | — |
 
-### Herramientas funcionales (invocables o ejecutables): **412**
+### Herramientas funcionales (invocables o ejecutables): **430**
 
-> Skills (192) + Plugin skills (86) + Commands (71) + Scripts (42+7) + Prompts (3) + Architect patterns (9) + TS source (2) = 412
+> Skills (210) + Plugin skills (86) + Commands (71) + Scripts (42+7) + Prompts (3) + Architect patterns (9) + TS source (2) = 430
 
 ---
 
-## Categorías: 19 temáticas + 1 de plugins/repos
+## Categorías: 22 temáticas + 1 de plugins/repos
 
 | # | Categoría | Skills | Nuevas (sesión 2-3) |
 |---|-----------|--------|---------------------|
@@ -51,7 +51,10 @@
 | 17 | SKILLS-PRODUCTIVIDAD | 2 | — |
 | 18 | SKILLS-BIOINVESTIGACION | 5 | — |
 | 19 | SKILLS-BUSQUEDA-EMPRESARIAL | 3 | — |
-| | **TOTAL SKILLS INSTALABLES** | **192** | +38 |
+| 20 | SKILLS-DISENO-UX | 6 | +6 (nuevo) |
+| 21 | SKILLS-RRHH | 6 | +6 (nuevo) |
+| 22 | SKILLS-OPERACIONES | 6 | +6 (nuevo) |
+| | **TOTAL SKILLS INSTALABLES** | **210** | +56 |
 
 ---
 
@@ -470,6 +473,51 @@ Búsqueda multi-fuente empresarial, síntesis y gestión de conectores.
 | sintesis-conocimiento-multifuente-SKILL.md | Combinar resultados de múltiples fuentes con atribución | enterprise-search:knowledge-synthesis |
 | estrategia-busqueda-descomposicion-SKILL.md | Descomponer queries y orquestar búsqueda multi-fuente | enterprise-search:search-strategy |
 | gestion-fuentes-mcp-conectadas-SKILL.md | Gestionar fuentes MCP conectadas, prioridad, rate limiting | enterprise-search:source-management |
+
+---
+
+## 20-SKILLS-DISENO-UX (6 skills)
+
+Diseño de interfaces, accesibilidad, design systems y UX writing.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| revision-accesibilidad-wcag-SKILL.md | Auditoría de accesibilidad WCAG 2.1 AA | design:accessibility |
+| critica-diseno-constructiva-SKILL.md | Crítica de diseño con framework estructurado | design:critique |
+| handoff-diseno-desarrollo-SKILL.md | Handoff diseño → desarrollo con specs | design:handoff |
+| gestion-design-system-tokens-SKILL.md | Gestión de design tokens y sistemas de diseño | design:design-system |
+| investigacion-usuarios-ux-SKILL.md | Síntesis de investigación de usuarios | design:research-synthesis |
+| escritura-ux-microcopy-SKILL.md | UX writing y microcopy para interfaces | design:ux-copy |
+
+---
+
+## 21-SKILLS-RRHH (6 skills)
+
+Recursos humanos, reclutamiento, compensación y gestión organizacional.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| benchmarking-compensacion-salarial-SKILL.md | Benchmarking salarial y estructuras de compensación | human-resources:compensation-benchmarking |
+| manual-empleado-politicas-SKILL.md | Creación de manuales de empleado y políticas | human-resources:employee-handbook |
+| preparacion-entrevistas-tecnicas-SKILL.md | Preparación y evaluación de entrevistas técnicas | human-resources:interview-prep |
+| planificacion-organizacional-SKILL.md | Planificación organizacional y diseño de equipos | human-resources:org-planning |
+| analytics-personas-metricas-SKILL.md | People analytics y métricas de RRHH | human-resources:people-analytics |
+| pipeline-reclutamiento-hiring-SKILL.md | Pipeline de reclutamiento end-to-end | human-resources:recruitment-pipeline |
+
+---
+
+## 22-SKILLS-OPERACIONES (6 skills)
+
+Gestión operativa, compliance, riesgos y optimización de procesos.
+
+| Archivo | Función | Origen |
+|---------|---------|--------|
+| gestion-cambio-organizacional-SKILL.md | Gestión del cambio organizacional estructurada | operations:change-management |
+| seguimiento-compliance-regulatorio-SKILL.md | Seguimiento de compliance y regulaciones | operations:compliance-tracking |
+| optimizacion-procesos-eficiencia-SKILL.md | Optimización de procesos y eficiencia operativa | operations:process-optimization |
+| planificacion-recursos-capacidad-SKILL.md | Planificación de recursos y capacidad | operations:resource-planning |
+| evaluacion-riesgos-operacionales-SKILL.md | Evaluación y mitigación de riesgos operacionales | operations:risk-assessment |
+| gestion-proveedores-contratos-SKILL.md | Gestión de proveedores y contratos | operations:vendor-management |
 
 ---
 
