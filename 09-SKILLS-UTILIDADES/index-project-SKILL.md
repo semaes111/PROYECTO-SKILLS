@@ -1,0 +1,271 @@
+---
+name: index-project
+description: "Index, scan, and maintain a living project map. Creates/updates a PROJECT_INDEX.md file at the project root that tracks all files, architecture, conversations, and changes over time. Use when the user says 'index project', 'scan project', 'analyze project', 'update index', 'refresh index', 'add to index', 'index conversations', 'project overview', or '/index'. Works with ANY project type."
+user-invocable: true
+---
+
+# Index Project Skill
+
+## Overview
+This skill creates and maintains a **living project index** via a `PROJECT_INDEX.md` file at the project root. The index is NOT a one-time snapshot — it evolves with the project, tracking new files, conversations, decisions, and changes.
+
+## Two-File Architecture
+
+| File | Location | Purpose |
+|------|----------|---------|
+| `SKILL.md` | `~/.claude/skills/index-project/` | Global instructions (this file) — never changes per project |
+| `PROJECT_INDEX.md` | `{project_root}/PROJECT_INDEX.md` | Per-project living index — created and updated automatically |
+
+---
+
+## COMMANDS
+
+### `/index` or "index project" — Full Index (Create or Rebuild)
+Creates `PROJECT_INDEX.md` from scratch or rebuilds it completely.
+
+### "update index" or "refresh index" — Incremental Update
+Reads existing `PROJECT_INDEX.md`, detects new/modified/deleted files, and updates only changed sections.
+
+### "add to index" or "index this" — Add Current Context
+Appends current conversation summary, new files discussed, or decisions made to the CHANGELOG section of `PROJECT_INDEX.md`.
+
+### "index conversations" — Log Conversation History
+Adds a summary of the current session's key topics, decisions, and code changes to the CONVERSATIONS section.
+
+---
+
+## EXECUTION: FULL INDEX (Create/Rebuild)
+
+### Step 1: Check for Existing Index
+```
+Read PROJECT_INDEX.md if it exists → preserve CONVERSATIONS and CHANGELOG sections
+```
+
+### Step 2: Detect Project Type
+Check for project markers: `package.json`, `Cargo.toml`, `go.mod`, `pyproject.toml`, `pom.xml`, `*.sln`, `composer.json`, `Gemfile`, `build.gradle`, `pubspec.yaml`, `CMakeLists.txt`, `Makefile`
+
+### Step 3: Scan All Files
+**On Windows (PowerShell):**
+```powershell
+Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch '(node_modules|\.git[/\\]|dist[/\\]|build[/\\]|\.next|__pycache__|venv|\.venv|target[/\\]|\.cache|\.turbo|coverage|vendor|\.dart_tool|\.gradle|bin\\Debug|bin\\Release|obj[/\\]|\.idea|\.vscode)' -and $_.Name -notmatch '\.(lock|min\.js|min\.css|map|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|mp4|mp3|zip|tar|gz|exe|dll|so|dylib)$' -and $_.Name -notmatch '^(package-lock|yarn\.lock|pnpm-lock)' } | ForEach-Object { $_.FullName.Replace((Get-Location).Path + '\', '').Replace('\', '/') } | Sort-Object
+```
+
+**On Linux/Mac (bash):**
+```bash
+find . -type f ! -path '*/node_modules/*' ! -path '*/.git/*' ! -path '*/dist/*' ! -path '*/build/*' ! -path '*/.next/*' ! -path '*/__pycache__/*' ! -path '*/venv/*' ! -path '*/.venv/*' ! -path '*/target/*' ! -path '*/.cache/*' ! -path '*/.turbo/*' ! -path '*/coverage/*' ! -path '*/vendor/*' ! -name '*.lock' ! -name 'package-lock.json' ! -name '*.min.js' ! -name '*.min.css' ! -name '*.map' ! -name '*.png' ! -name '*.jpg' ! -name '*.gif' ! -name '*.ico' ! -name '*.svg' ! -name '*.woff*' ! -name '*.ttf' | sort
+```
+
+### Step 4: Read Key Files
+Read in this priority order:
+1. **Project manifest** (`package.json`, `Cargo.toml`, etc.)
+2. **Config files** (`tsconfig.json`, `.env.example`, `Dockerfile`)
+3. **Entry points** (`src/index.ts`, `main.py`, `main.go`, etc.)
+4. **Route/API definitions**
+5. **Database schemas/models**
+6. **Type definitions**
+7. **README.md**, `CLAUDE.md`
+
+For files > 500 lines: read first 100 lines + note total length.
+
+### Step 5: Generate PROJECT_INDEX.md
+Write the complete `PROJECT_INDEX.md` file to the project root using the template below.
+
+### Step 6: Confirm
+Tell the user: "Index created at PROJECT_INDEX.md — [X] files mapped. I'll update it as we work."
+
+---
+
+## EXECUTION: INCREMENTAL UPDATE
+
+### Step 1: Read existing PROJECT_INDEX.md
+### Step 2: Scan current files, compare against stored file list
+### Step 3: Identify:
+- **NEW** files (not in index)
+- **MODIFIED** files (different size/date)
+- **DELETED** files (in index but not on disk)
+### Step 4: Update the relevant sections
+### Step 5: Add entry to CHANGELOG section with timestamp
+### Step 6: Write updated PROJECT_INDEX.md
+
+---
+
+## EXECUTION: INDEX CONVERSATIONS
+
+### Step 1: Read existing PROJECT_INDEX.md
+### Step 2: Summarize the current session:
+- What was discussed
+- What files were created/modified/deleted
+- Key decisions made
+- Problems solved
+- TODOs identified
+### Step 3: Append to CONVERSATIONS section with timestamp
+### Step 4: If new files were created, also update FILE REGISTRY
+### Step 5: Write updated PROJECT_INDEX.md
+
+---
+
+## PROJECT_INDEX.md TEMPLATE
+
+The generated file MUST follow this exact structure:
+
+```markdown
+# 📋 PROJECT INDEX — {project_name}
+
+> **Auto-generated by Claude Index Skill**
+> Last updated: {YYYY-MM-DD HH:MM}
+> Index version: {incremental_number}
+
+---
+
+## 🏗️ PROJECT IDENTITY
+
+| Field | Value |
+|-------|-------|
+| Name | {name} |
+| Root Path | {absolute_path} |
+| Language(s) | {languages} |
+| Framework | {framework} |
+| Database | {database or "None detected"} |
+| Styling | {styling} |
+| Testing | {testing} |
+| Build Tool | {build_tool} |
+| Deploy Target | {deploy_target} |
+| Package Manager | {npm/yarn/pnpm/pip/cargo/go} |
+
+---
+
+## 📊 STATS
+
+| Metric | Count |
+|--------|-------|
+| Total Source Files | {count} |
+| Total Lines (est.) | {count} |
+| Dependencies (prod) | {count} |
+| Dependencies (dev) | {count} |
+| Directories | {count} |
+
+### Files by Extension
+| Extension | Count |
+|-----------|-------|
+| .ts | {n} |
+| .tsx | {n} |
+| ... | ... |
+
+---
+
+## 📁 DIRECTORY MAP
+
+{tree structure with descriptions}
+
+```
+project_root/
+├── src/                    # Source code
+│   ├── components/         # React components ({n} files)
+│   ├── hooks/              # Custom hooks ({n} files)
+│   ├── utils/              # Utility functions ({n} files)
+│   ├── api/                # API routes ({n} files)
+│   └── types/              # TypeScript types ({n} files)
+├── public/                 # Static assets
+├── tests/                  # Test files ({n} files)
+├── package.json            # Dependencies & scripts
+├── tsconfig.json           # TypeScript config
+└── PROJECT_INDEX.md        # ← This file
+```
+
+---
+
+## 📄 FILE REGISTRY
+
+### Critical Files (Must-Know)
+| File | Purpose | Lines |
+|------|---------|-------|
+| {path} | {1-line description} | {n} |
+| ... | ... | ... |
+
+### All Source Files
+<details>
+<summary>Click to expand full file list ({n} files)</summary>
+
+| # | File Path | Extension | Lines |
+|---|-----------|-----------|-------|
+| 1 | {path} | {ext} | {n} |
+| ... | ... | ... | ... |
+
+</details>
+
+---
+
+## 🔗 DEPENDENCIES
+
+### Key Production Dependencies
+| Package | Version | Purpose |
+|---------|---------|---------|
+| {name} | {version} | {what it does} |
+
+### Key Dev Dependencies
+| Package | Version | Purpose |
+|---------|---------|---------|
+| {name} | {version} | {what it does} |
+
+---
+
+## 🏛️ ARCHITECTURE
+
+{2-4 paragraphs explaining:}
+- How the project is structured
+- Data flow (frontend → API → DB)
+- Key design patterns used
+- Entry points and boot sequence
+
+---
+
+## 🗣️ CONVERSATIONS
+
+> Session log — tracks what was discussed and decided with Claude across sessions.
+
+### {YYYY-MM-DD HH:MM} — Session #{n}
+**Topics:** {bullet list of topics}
+**Files touched:** {list of files created/modified/deleted}
+**Decisions:**
+- {decision 1}
+- {decision 2}
+**TODOs identified:**
+- [ ] {todo 1}
+- [ ] {todo 2}
+
+---
+
+## 📝 CHANGELOG
+
+> Tracks structural changes to the project detected by the index.
+
+### {YYYY-MM-DD HH:MM} — v{n}
+- ➕ Added: {files}
+- ✏️ Modified: {files}
+- 🗑️ Removed: {files}
+- 📊 Stats: {total files now} files, {total lines} lines
+
+---
+
+## 🧠 PROJECT NOTES
+
+> Free-form notes, context, and institutional knowledge about this project.
+> Add anything here that future sessions should know.
+
+{notes}
+```
+
+---
+
+## IMPORTANT RULES
+
+1. **ALWAYS write PROJECT_INDEX.md to the project root** — never to a subdirectory
+2. **PRESERVE existing CONVERSATIONS and CHANGELOG** when rebuilding the index
+3. **Never index**: `node_modules`, `.git`, `dist`, `build`, binary files, lock files, images, fonts
+4. **For monorepos**: create one index at root with sub-sections per workspace
+5. **For 500+ files**: use collapsible `<details>` sections, summarize by directory
+6. **On update**: always add a CHANGELOG entry with timestamp
+7. **On conversation index**: always add date, topics, files touched, and decisions
+8. **Max file read**: 100 lines for files over 500 lines (note total)
+9. **Auto-detect OS**: use PowerShell on Windows, bash on Linux/Mac
+10. **The PROJECT_INDEX.md IS the project memory** — treat it as the source of truth for Claude across sessions
