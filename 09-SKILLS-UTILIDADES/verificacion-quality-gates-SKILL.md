@@ -2,6 +2,9 @@
 name: verification-loop
 description: "A comprehensive verification system for Claude Code sessions."
 origin: ECC
+ecc-version: main@5b173d2
+ecc-source: skills/verification-loop
+ecc-imported: 2026-06-12
 ---
 
 # Verification Loop Skill

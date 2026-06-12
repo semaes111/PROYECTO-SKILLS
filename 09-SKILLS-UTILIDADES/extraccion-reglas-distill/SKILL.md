@@ -2,6 +2,9 @@
 name: rules-distill
 description: "Scan skills to extract cross-cutting principles and distill them into rules — append, revise, or create new rule files"
 origin: ECC
+ecc-version: main@5b173d2
+ecc-source: skills/rules-distill
+ecc-imported: 2026-06-12
 ---
 
 # Rules Distill

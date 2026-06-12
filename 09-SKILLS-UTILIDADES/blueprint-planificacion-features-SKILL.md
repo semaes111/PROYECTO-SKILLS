@@ -11,6 +11,9 @@ description: >-
   DO NOT TRIGGER when: task is completable in a single PR or fewer
   than 3 tool calls, or user says "just do it".
 origin: community
+ecc-version: main@5b173d2
+ecc-source: skills/blueprint
+ecc-imported: 2026-06-12
 ---
 
 # Blueprint — Construction Plan Generator

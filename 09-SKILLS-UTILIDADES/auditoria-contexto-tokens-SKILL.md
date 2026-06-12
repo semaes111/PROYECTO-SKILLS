@@ -2,6 +2,9 @@
 name: context-budget
 description: Audits Claude Code context window consumption across agents, skills, MCP servers, and rules. Identifies bloat, redundant components, and produces prioritized token-savings recommendations.
 origin: ECC
+ecc-version: main@5b173d2
+ecc-source: skills/context-budget
+ecc-imported: 2026-06-12
 ---
 
 # Context Budget
